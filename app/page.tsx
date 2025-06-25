@@ -37,6 +37,9 @@ import {
   Puzzle,
   FlaskConical,
   Brain,
+  ChevronDown,
+  Mail,
+  Phone,
 } from "lucide-react"
 import { useState } from "react"
 
@@ -732,101 +735,6 @@ const content = {
         },
       ],
     },
-    successStories: {
-      subtitle: "Systems optimized with OW solutions provide measurable benefits in the field.",
-      items: [
-        {
-          id: "izmir-transport",
-          title: "İzmir Transportation Network Optimization",
-          icon: Route,
-          iconColor: "text-blue-600",
-          shortDescription: "Bus routes were restructured with scientific analysis with İzmir Metropolitan Municipality.",
-          longDescription: `In this project carried out with İzmir Metropolitan Municipality, all bus routes were restructured with scientific analysis using OW TransitOpt™ algorithms. Result: 18% shorter average travel time, 22% lower operating costs, significant increase in fleet efficiency.`,
-        },
-        {
-          id: "hospital-early-diagnosis",
-          title: "Early Diagnosis with OW Decisions™ in Public Hospital",
-          icon: Stethoscope,
-          iconColor: "text-green-600",
-          shortDescription: "The diagnostic process was supported with data-driven recommendations in a medium-sized state hospital.",
-          longDescription: `In a medium-sized state hospital, the diagnostic process was supported with data-driven recommendations using the OW Decisions™ decision support system. Result: Average diagnosis time for critical patients was shortened by 35%, and the rate of referral to correct treatment increased.`,
-        },
-        {
-          id: "passenger-density-cost-saving",
-          title: "Cost Savings with Passenger Density Modeling",
-          icon: Users,
-          iconColor: "text-purple-600",
-          shortDescription: "Savings were achieved in the municipal public transportation system with real-time passenger prediction model.",
-          longDescription: `A real-time passenger prediction model was established in a municipal public transportation system with the OW RiderSense™ platform. Result: Flight planning was optimized according to demand, 40% reduction in density-related complaints, 19% savings in total operation costs.`,
-        },
-        {
-          id: "dead-km-minimization",
-          title: "Data-Driven Dead Km Minimization Model",
-          icon: Truck,
-          iconColor: "text-orange-600",
-          shortDescription: "Solutions were implemented to reduce dead kilometers in fleet planning.",
-          longDescription: `OW CostLogic™ and TransitOpt™ were applied together to reduce dead kilometers in fleet planning. Result: By optimizing garage-route matches, daily total dead km was reduced by 26%. Both fuel costs and carbon emissions were significantly reduced.`,
-        },
-      ],
-    },
-    contact: {
-      subtitle:
-        "Whether you want to see a demo, reach out for strategic collaboration or press contact — the OW team is ready to respond.",
-      items: [
-        {
-          id: "demo-form",
-          title: "Quick Demo Form",
-          icon: FormInput,
-          iconColor: "text-blue-600",
-          shortDescription: "Would you like to see how OW solutions work for your organization?",
-          longDescription: `Fill out the form and let's contact you with a demo specially prepared for your needs.
-        <br/><br/>
-        **Required fields:** Name – Organization – Email – Solution of interest – Message
-        <br/>
-        **Response time:** Reply within 24 hours.`,
-        },
-        {
-          id: "partnership-application",
-          title: "Partnership Application",
-          icon: Handshake,
-          iconColor: "text-green-600",
-          shortDescription:
-            "A dedicated contact area for companies wishing to integrate OW technologies, co-develop products, or apply for distributorship.",
-          longDescription: `We are open to global technology collaborations.`,
-        },
-        {
-          id: "press-media",
-          title: "Press & Media Communication",
-          icon: Newspaper,
-          iconColor: "text-purple-600",
-          shortDescription:
-            "Media representatives can contact us directly for interviews, press kits, sector analyses, or events.",
-          longDescription: `Our corporate identity kit and press releases are sent upon request.`,
-        },
-        {
-          id: "locations",
-          title: "Locations & Representatives",
-          icon: Map,
-          iconColor: "text-orange-600",
-          shortDescription: "OW is based in Turkey and has a representative network in Europe and the USA.",
-          longDescription: `The page should include location display on a map and a list of representatives to contact directly via email.
-        <br/><br/>
-        **Contact Information:**
-        <br/>
-        <Mail className="inline-block w-4 h-4 mr-2" /> Email: info@ow.com
-        <br/>
-        <Phone className="inline-block w-4 h-4 mr-2" /> Phone: 02322353535
-        <br/><br/>
-        **📌 Example:**
-        <br/>
-        **İzmir — Headquarters:** Gazi Mustafa Kemal District, Kaynaklar Street Seyrek, Menemen, İzmir
-        <br/>
-        **Berlin — European Operations**
-        <br/>
-        **Seattle — American Representation**`,
-        },
-      ],
-    },
     ekibimiz: {
       // New section for Ekibimiz
       subtitle:
@@ -945,6 +853,7 @@ export default function HomePage() {
   const [openSectorId, setOpenSectorId] = useState<string | null>(null)
   const [openStoryId, setOpenStoryId] = useState<string | null>(null)
   const [openContactId, setOpenContactId] = useState<string | null>(null)
+  const [openTeamId, setOpenTeamId] = useState<string | null>(null) // Ekibimiz için yeni state
 
   const [selectedProduct, setSelectedProduct] = useState<any | null>(null)
   const [showProductDetail, setShowProductDetail] = useState(false)
@@ -973,6 +882,7 @@ export default function HomePage() {
     setOpenSectorId(null)
     setOpenStoryId(null)
     setOpenContactId(null)
+    setOpenTeamId(null)
   }
 
   const handleProductClick = (product: any) => {
@@ -1003,6 +913,10 @@ export default function HomePage() {
     } else {
       setOpenContactId(openContactId === id ? null : id)
     }
+  }
+
+  const toggleTeamItem = (id: string) => {
+    setOpenTeamId(openTeamId === id ? null : id)
   }
 
   const closeDemoForm = () => {
@@ -1490,14 +1404,30 @@ export default function HomePage() {
                   </p>
                   {currentContent.ekibimiz.items.map((member) => {
                     const IconComponent = member.icon
+                    const isOpen = openTeamId === member.id
                     return (
-                      <div key={member.id} className="flex items-start gap-3 text-left w-full p-2 rounded-lg">
-                        <IconComponent className={`w-4 h-4 sm:w-5 sm:h-5 ${member.iconColor} mt-0.5 flex-shrink-0`} />
-                        <div>
-                          <h4 className="font-medium text-gray-900 mb-1">{member.title}</h4>
-                          <p className="leading-relaxed mb-1 text-xs sm:text-sm">{member.shortDescription}</p>
-                          <p className="text-xs text-gray-600">{member.longDescription}</p>
-                        </div>
+                      <div key={member.id} className="transition-all duration-500 delay-200 animate-in slide-in-from-left-2 fade-in">
+                        {/* Üye başlığı ve toggle butonu */}
+                        <button
+                          onClick={() => toggleTeamItem(member.id)}
+                          className="flex items-center justify-between w-full p-3 text-left hover:bg-white/30 rounded-lg transition-colors duration-200"
+                        >
+                          <div className="flex items-center gap-3">
+                            <IconComponent className={`w-4 h-4 sm:w-5 sm:h-5 ${member.iconColor} flex-shrink-0`} />
+                            <div>
+                              <h4 className="font-medium text-gray-900 text-sm">{member.title}</h4>
+                              <p className="text-xs text-gray-600">{member.shortDescription}</p>
+                            </div>
+                          </div>
+                          <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+                        </button>
+
+                        {/* Genişleyebilen detay içeriği */}
+                        {isOpen && (
+                          <div className="mt-2 ml-7 p-3 bg-white/20 rounded-lg border border-white/20 transition-all duration-500 animate-in slide-in-from-top-2 fade-in">
+                            <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">{member.longDescription}</p>
+                          </div>
+                        )}
                       </div>
                     )
                   })}
