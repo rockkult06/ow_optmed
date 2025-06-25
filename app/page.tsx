@@ -2204,7 +2204,7 @@ export default function HomePage() {
           onClick={handleCtaClick} // Updated onClick to open the new modal
           className="bg-[#EBECEC]/50 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors px-3 py-2 sm:px-2 sm:py-1 shadow-md inline-flex items-center gap-2 min-w-[120px] sm:min-w-[100px] justify-between"
         >
-          <span className="text-xs sm:text-xs">{currentContent.hero.cta}</span>
+          <span className="text-xs sm:text-xs">{selectedLanguage === "TR" ? "Tıbbi veri analizinde yeni nesil yaklaşımlar" : "Next-generation approaches in medical data analysis"}</span>
           <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center">
             <ArrowRight className="w-4 h-4 text-[#0171E3]" />
           </div>
@@ -2223,13 +2223,16 @@ export default function HomePage() {
         </div>
 
         {/* Sol altta metin - Mobilde üstte */}
-        <div className="absolute bottom-16 left-5 sm:bottom-20 sm:left-10 z-20 text-left">
+        <div className="absolute bottom-20 left-5 sm:bottom-20 sm:left-10 z-20 text-left">
           <div className="flex items-baseline gap-3">
             <h1 className="text-5xl sm:text-8xl font-bold text-gray-900 leading-none">OW</h1>
-            <span className="text-lg sm:text-2xl text-gray-700">♡ Optimize the World ♡</span>
+            <span className="text-lg sm:text-2xl text-gray-800">♡ Optimize the World ♡</span>
           </div>
           <div className="text-base sm:text-xl text-gray-700 mt-2 max-w-[280px] sm:max-w-none overflow-hidden">
-            <p className="sliding-text">Sağlık Sistemleri için Akıllı Analitik [♡] Sağlıklı Kent Çözümleri</p>
+            <div className="sliding-text">
+              <div>⌘ {selectedLanguage === "TR" ? "Sağlık Sistemleri için Akıllı Analitik" : "Smart Analytics for Health Systems"}</div>
+              <div>⌘ {selectedLanguage === "TR" ? "Sağlıklı Kent Çözümleri" : "Healthy City Solutions"}</div>
+            </div>
           </div>
         </div>
       </main>
