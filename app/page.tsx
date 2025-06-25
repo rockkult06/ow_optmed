@@ -843,7 +843,7 @@ const content = {
 export default function HomePage() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const [hoveredMenuItem, setHoveredMenuItem] = useState<string | null>(null)
-  const [selectedLanguage, setSelectedLanguage] = useState("TR") // Default to TR
+  const [selectedLanguage, setSelectedLanguage] = useState("EN") // Default to EN
   // Correct individual state hooks
   const [showWhoWeAre, setShowWhoWeAre] = useState(false)
   const [showVisionMission, setShowVisionMission] = useState(false)
@@ -951,6 +951,18 @@ export default function HomePage() {
           }
         }
 
+        @keyframes neon-glow {
+          0%,
+          100% {
+            filter: drop-shadow(0 0 5px rgba(70, 130, 180, 0.3))
+              drop-shadow(0 0 10px rgba(70, 130, 180, 0.2));
+          }
+          50% {
+            filter: drop-shadow(0 0 15px rgba(70, 130, 180, 0.5))
+              drop-shadow(0 0 25px rgba(70, 130, 180, 0.4));
+          }
+        }
+
         @keyframes fade-text {
           0% {
             opacity: 0;
@@ -967,7 +979,8 @@ export default function HomePage() {
         }
 
         .hero-image-animated {
-          animation: pulse-opacity 7s ease-in-out infinite; /* Only opacity animation */
+          animation: pulse-opacity 7s ease-in-out infinite,
+            neon-glow 8s alternate infinite ease-in-out;
         }
 
         .fading-text {
