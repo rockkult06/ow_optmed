@@ -1447,13 +1447,13 @@ export default function HomePage() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => toggleDropdown("mobile-menu")}
-              className="bg-[#EBECEC]/55 rounded-lg px-3 py-2 shadow-md flex items-center gap-2 hover:bg-[#EBECEC]/70 transition-all duration-300"
+              className="bg-[#EBECEC]/55 rounded-xl px-4 py-3 shadow-md flex items-center gap-3 hover:bg-[#EBECEC]/70 transition-all duration-300 min-w-[100px] min-h-[44px]"
             >
-              <span className="text-xs font-medium text-gray-900">Menü</span>
-              <div className="w-4 h-4 flex flex-col justify-center space-y-1">
-                <div className="w-full h-0.5 bg-gray-900"></div>
-                <div className="w-full h-0.5 bg-gray-900"></div>
-                <div className="w-full h-0.5 bg-gray-900"></div>
+              <span className="text-sm font-medium text-gray-900">Menü</span>
+              <div className="w-5 h-5 flex flex-col justify-center space-y-1">
+                <div className="w-full h-1 bg-gray-900 rounded-full"></div>
+                <div className="w-full h-1 bg-gray-900 rounded-full"></div>
+                <div className="w-full h-1 bg-gray-900 rounded-full"></div>
               </div>
             </button>
           </div>
@@ -2193,22 +2193,22 @@ export default function HomePage() {
       )}
 
       {/* CTA Button */}
-      <div className="absolute top-[70px] sm:top-[100px] left-1/2 -translate-x-1/2 z-10">
+      <div className="absolute top-[75px] sm:top-[100px] left-1/2 -translate-x-1/2 z-10">
         <button
           onClick={handleCtaClick} // Updated onClick to open the new modal
-          className="bg-[#EBECEC]/50 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors px-3 py-2 sm:px-2 sm:py-1 shadow-md inline-flex items-center gap-2 min-w-[120px] sm:min-w-[100px] justify-between"
+          className="bg-[#EBECEC]/60 rounded-xl text-gray-700 hover:bg-[#EBECEC]/80 transition-all duration-300 px-4 py-3 sm:px-3 sm:py-2 shadow-lg hover:shadow-xl inline-flex items-center gap-3 sm:gap-2 min-w-[200px] sm:min-w-[180px] justify-between backdrop-blur-sm"
         >
-          <span className="text-xs sm:text-xs">{selectedLanguage === "TR" ? "Tıbbi veri analizinde yeni nesil yaklaşımlar" : "Next-generation approaches in medical data analysis"}</span>
-          <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center">
+          <span className="text-xs sm:text-xs font-medium leading-tight">{selectedLanguage === "TR" ? "Tıbbi veri analizinde yeni nesil yaklaşımlar" : "Next-generation approaches in medical data analysis"}</span>
+          <div className="w-7 h-7 sm:w-6 sm:h-6 rounded-full bg-white flex items-center justify-center shadow-sm">
             <ArrowRight className="w-4 h-4 text-[#0171E3]" />
           </div>
         </button>
       </div>
 
       {/* Hero Section */}
-      <main className="flex-grow relative flex items-center justify-center px-4 pt-16 sm:pt-0">
+      <main className="flex-grow relative flex items-center justify-center px-4 pt-8 sm:pt-0">
         {/* Ortalanmış Görsel - Tek görsel ve opaklık animasyonu */}
-        <div className="relative w-full max-w-[280px] h-[320px] sm:max-w-[500px] sm:h-[600px]">
+        <div className="relative w-full max-w-[260px] h-[280px] sm:max-w-[500px] sm:h-[600px] -mt-8 sm:mt-0">
           <img
             src={heroImage || "/placeholder.svg"}
             alt="3D rendered human head with neural network pattern overlay representing AI and medical data analysis"
@@ -2216,14 +2216,14 @@ export default function HomePage() {
           />
         </div>
 
-        {/* Sol altta metin - Mobilde üstte */}
-        <div className="absolute bottom-20 left-5 sm:bottom-20 sm:left-10 z-20 text-left">
-          <div className="flex items-baseline gap-3">
-            <h1 className="text-5xl sm:text-8xl font-bold text-gray-900 leading-none">OW</h1>
-            <span className="text-lg sm:text-2xl text-gray-800">♡ Optimize the World ♡</span>
+        {/* Sol altta metin - Mobilde optimize */}
+        <div className="absolute bottom-8 left-4 sm:bottom-20 sm:left-10 z-20 text-left">
+          <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-3">
+            <h1 className="text-4xl sm:text-8xl font-bold text-gray-900 leading-none">OW</h1>
+            <span className="text-base sm:text-2xl text-gray-800 font-medium">♡ Optimize the World ♡</span>
           </div>
-          <div className="text-base sm:text-xl text-gray-700 mt-2 max-w-[280px] sm:max-w-none">
-            <div className="fading-text">
+          <div className="text-sm sm:text-xl text-gray-700 mt-3 sm:mt-2 max-w-[320px] sm:max-w-none leading-relaxed">
+            <div className="fading-text space-y-1">
               <div>⌘ {selectedLanguage === "TR" ? "Sağlık Sistemleri için Akıllı Analitik" : "Smart Analytics for Health Systems"}</div>
               <div>⌘ {selectedLanguage === "TR" ? "Sağlıklı Kent Çözümleri" : "Healthy City Solutions"}</div>
             </div>
