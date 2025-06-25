@@ -1449,7 +1449,7 @@ export default function HomePage() {
               onClick={() => toggleDropdown("mobile-menu")}
               className="bg-[#EBECEC]/55 rounded-xl px-6 py-3 shadow-md flex items-center gap-3 hover:bg-[#EBECEC]/70 transition-all duration-300 min-w-[130px] min-h-[44px]"
             >
-              <span className="text-sm font-medium text-gray-900">Menü</span>
+              <span className="text-sm font-medium text-gray-900">{selectedLanguage === "TR" ? "Menü" : "Menu"}</span>
               <div className="w-5 h-5 flex flex-col justify-center space-y-1">
                 <div className="w-full h-1 bg-gray-900 rounded-full"></div>
                 <div className="w-full h-1 bg-gray-900 rounded-full"></div>
@@ -2198,7 +2198,7 @@ export default function HomePage() {
           onClick={handleCtaClick} // Updated onClick to open the new modal
           className="bg-[#EBECEC]/60 rounded-xl text-gray-700 hover:bg-[#EBECEC]/80 transition-all duration-300 px-4 py-3 sm:px-3 sm:py-2 shadow-lg hover:shadow-xl inline-flex items-center gap-3 sm:gap-2 min-w-[200px] sm:min-w-[180px] justify-between backdrop-blur-sm"
         >
-          <span className="text-xs sm:text-xs font-medium leading-tight">{selectedLanguage === "TR" ? "Tıbbi veri analizinde yeni nesil yaklaşımlar" : "Next-generation approaches in medical data analysis"}</span>
+          <span className="text-xs sm:text-xs font-medium leading-tight">{selectedLanguage === "TR" ? "OW: veri analizinde yeni nesil yaklaşımlar" : "OW: next-generation approaches in data analysis"}</span>
           <div className="w-7 h-7 sm:w-6 sm:h-6 rounded-full bg-white flex items-center justify-center shadow-sm">
             <ArrowRight className="w-4 h-4 text-[#0171E3]" />
           </div>
