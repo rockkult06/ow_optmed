@@ -1324,7 +1324,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col relative overflow-hidden">
-      {/* CSS for Hero Image Animation */}
+      {/* CSS for Hero Image Animation and Slogan Sliding */}
       <style jsx>{`
         @keyframes pulse-opacity {
           0% {
@@ -1338,8 +1338,33 @@ export default function HomePage() {
           }
         }
 
+        @keyframes slide-text {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          20% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+          80% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+          100% {
+            transform: translateX(100%);
+            opacity: 0;
+          }
+        }
+
         .hero-image-animated {
           animation: pulse-opacity 7s ease-in-out infinite; /* Only opacity animation */
+        }
+
+        .sliding-text {
+          animation: slide-text 8s ease-in-out infinite;
+          white-space: nowrap;
+          overflow: hidden;
         }
       `}</style>
 
@@ -2200,24 +2225,13 @@ export default function HomePage() {
         {/* Sol altta metin - Mobilde üstte */}
         <div className="absolute bottom-16 left-5 sm:bottom-20 sm:left-10 z-20 text-left">
           <h1 className="text-5xl sm:text-8xl font-bold text-gray-900 leading-none">OW</h1>
-          <p className="text-base sm:text-xl text-gray-700 mt-2 max-w-[280px] sm:max-w-none">{currentContent.hero.slogan}</p>
+          <div className="text-base sm:text-xl text-gray-700 mt-2 max-w-[280px] sm:max-w-none overflow-hidden">
+            <p className="sliding-text">♡ Optimize the World ♡ Sağlık Sistemleri için Akıllı Analitik [♡] Sağlıklı Kent Çözümleri</p>
+          </div>
         </div>
       </main>
 
-      {/* Bottom Tags */}
-      <div className="absolute bottom-4 left-4 right-4 flex flex-wrap items-center gap-2 justify-start z-20">
-        <span className="text-[#AEADAD] font-normal text-xs sm:text-base mb-1 w-full sm:w-auto">{currentContent.bottomTags.explore}</span>
-        <div className="flex flex-wrap gap-2">
-          {currentContent.bottomTags.tags.map((tag, index) => (
-            <span
-              key={index}
-              className="px-2 py-1 sm:px-4 sm:py-2 bg-transparent border border-[#0171E3] rounded-full text-xs sm:text-sm text-[#0171E3] hover:bg-[#0171E3]/10 transition-colors cursor-pointer font-normal"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      </div>
+
     </div>
   )
 }
