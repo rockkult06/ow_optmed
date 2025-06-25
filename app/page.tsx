@@ -1338,21 +1338,17 @@ export default function HomePage() {
           }
         }
 
-        @keyframes slide-text {
+        @keyframes fade-text {
           0% {
-            transform: translateX(-100%);
             opacity: 0;
           }
-          15% {
-            transform: translateX(0);
+          20% {
             opacity: 1;
           }
-          85% {
-            transform: translateX(0);
+          80% {
             opacity: 1;
           }
           100% {
-            transform: translateX(100%);
             opacity: 0;
           }
         }
@@ -1361,10 +1357,8 @@ export default function HomePage() {
           animation: pulse-opacity 7s ease-in-out infinite; /* Only opacity animation */
         }
 
-        .sliding-text {
-          animation: slide-text 12s ease-in-out infinite;
-          white-space: nowrap;
-          overflow: hidden;
+        .fading-text {
+          animation: fade-text 8s ease-in-out infinite;
         }
       `}</style>
 
@@ -2228,8 +2222,8 @@ export default function HomePage() {
             <h1 className="text-5xl sm:text-8xl font-bold text-gray-900 leading-none">OW</h1>
             <span className="text-lg sm:text-2xl text-gray-800">♡ Optimize the World ♡</span>
           </div>
-          <div className="text-base sm:text-xl text-gray-700 mt-2 max-w-[280px] sm:max-w-none overflow-hidden">
-            <div className="sliding-text">
+          <div className="text-base sm:text-xl text-gray-700 mt-2 max-w-[280px] sm:max-w-none">
+            <div className="fading-text">
               <div>⌘ {selectedLanguage === "TR" ? "Sağlık Sistemleri için Akıllı Analitik" : "Smart Analytics for Health Systems"}</div>
               <div>⌘ {selectedLanguage === "TR" ? "Sağlıklı Kent Çözümleri" : "Healthy City Solutions"}</div>
             </div>
