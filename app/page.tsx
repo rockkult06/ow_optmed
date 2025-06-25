@@ -1447,7 +1447,7 @@ export default function HomePage() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => toggleDropdown("mobile-menu")}
-              className="bg-[#EBECEC]/55 rounded-xl px-4 py-3 shadow-md flex items-center gap-3 hover:bg-[#EBECEC]/70 transition-all duration-300 min-w-[100px] min-h-[44px]"
+              className="bg-[#EBECEC]/55 rounded-xl px-6 py-3 shadow-md flex items-center gap-3 hover:bg-[#EBECEC]/70 transition-all duration-300 min-w-[130px] min-h-[44px]"
             >
               <span className="text-sm font-medium text-gray-900">Menü</span>
               <div className="w-5 h-5 flex flex-col justify-center space-y-1">
@@ -2206,9 +2206,9 @@ export default function HomePage() {
       </div>
 
       {/* Hero Section */}
-      <main className="flex-grow relative flex items-center justify-center px-4 pt-8 sm:pt-0">
+      <main className="flex-grow relative flex items-center justify-center px-4 pt-4 sm:pt-0">
         {/* Ortalanmış Görsel - Tek görsel ve opaklık animasyonu */}
-        <div className="relative w-full max-w-[260px] h-[280px] sm:max-w-[500px] sm:h-[600px] -mt-8 sm:mt-0">
+        <div className="relative w-full max-w-[260px] h-[280px] sm:max-w-[500px] sm:h-[600px] -mt-20 sm:mt-0">
           <img
             src={heroImage || "/placeholder.svg"}
             alt="3D rendered human head with neural network pattern overlay representing AI and medical data analysis"
@@ -2217,7 +2217,7 @@ export default function HomePage() {
         </div>
 
         {/* Sol altta metin - Mobilde optimize */}
-        <div className="absolute bottom-8 left-4 sm:bottom-20 sm:left-10 z-20 text-left">
+        <div className="absolute bottom-24 left-4 sm:bottom-20 sm:left-10 z-20 text-left">
           <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-3">
             <h1 className="text-4xl sm:text-8xl font-bold text-gray-900 leading-none">OW</h1>
             <span className="text-base sm:text-2xl text-gray-800 font-medium">♡ Optimize the World ♡</span>
