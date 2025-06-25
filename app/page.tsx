@@ -1343,11 +1343,11 @@ export default function HomePage() {
             transform: translateX(-100%);
             opacity: 0;
           }
-          20% {
+          15% {
             transform: translateX(0);
             opacity: 1;
           }
-          80% {
+          85% {
             transform: translateX(0);
             opacity: 1;
           }
@@ -1362,7 +1362,7 @@ export default function HomePage() {
         }
 
         .sliding-text {
-          animation: slide-text 8s ease-in-out infinite;
+          animation: slide-text 12s ease-in-out infinite;
           white-space: nowrap;
           overflow: hidden;
         }
@@ -2224,9 +2224,12 @@ export default function HomePage() {
 
         {/* Sol altta metin - Mobilde üstte */}
         <div className="absolute bottom-16 left-5 sm:bottom-20 sm:left-10 z-20 text-left">
-          <h1 className="text-5xl sm:text-8xl font-bold text-gray-900 leading-none">OW</h1>
+          <div className="flex items-baseline gap-3">
+            <h1 className="text-5xl sm:text-8xl font-bold text-gray-900 leading-none">OW</h1>
+            <span className="text-lg sm:text-2xl text-gray-700">♡ Optimize the World ♡</span>
+          </div>
           <div className="text-base sm:text-xl text-gray-700 mt-2 max-w-[280px] sm:max-w-none overflow-hidden">
-            <p className="sliding-text">♡ Optimize the World ♡ Sağlık Sistemleri için Akıllı Analitik [♡] Sağlıklı Kent Çözümleri</p>
+            <p className="sliding-text">Sağlık Sistemleri için Akıllı Analitik [♡] Sağlıklı Kent Çözümleri</p>
           </div>
         </div>
       </main>
