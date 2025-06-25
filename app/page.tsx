@@ -951,18 +951,6 @@ export default function HomePage() {
           }
         }
 
-        @keyframes neon-glow {
-          0%,
-          100% {
-            filter: drop-shadow(0 0 5px rgba(70, 130, 180, 0.3))
-              drop-shadow(0 0 10px rgba(70, 130, 180, 0.2));
-          }
-          50% {
-            filter: drop-shadow(0 0 15px rgba(70, 130, 180, 0.5))
-              drop-shadow(0 0 25px rgba(70, 130, 180, 0.4));
-          }
-        }
-
         @keyframes fade-text {
           0% {
             opacity: 0;
@@ -979,8 +967,7 @@ export default function HomePage() {
         }
 
         .hero-image-animated {
-          animation: pulse-opacity 7s ease-in-out infinite,
-            neon-glow 8s alternate infinite ease-in-out;
+          animation: pulse-opacity 7s ease-in-out infinite; /* Only opacity animation */
         }
 
         .fading-text {
@@ -1121,125 +1108,42 @@ export default function HomePage() {
             : 'top-[60px] sm:top-[75px] left-1/2 transform -translate-x-1/2'
         }`}>
           <div
-            className="bg-white/60 backdrop-blur-2xl border border-white/20 rounded-2xl shadow-xl w-full max-w-lg p-6 sm:p-8 transform origin-top-right transition-all duration-300 ease-out animate-in slide-in-from-top-4 fade-in"
-            onMouseLeave={closeDropdown}
+            className={`bg-white/30 backdrop-blur-lg rounded-2xl shadow-xl border border-white/10 p-4 sm:p-6 transform origin-top transition-all duration-1000 ease-out animate-in slide-in-from-top-1 fade-in scale-in-95 ${
+              activeDropdown === 'mobile-menu' 
+                ? 'w-[280px]' 
+                : 'w-[95vw] sm:w-[580px]'
+            }`}
+            style={{
+              transformOrigin: "top center",
+              animationFillMode: "both",
+            }}
           >
-            <div className="flex justify-between items-center mb-4">
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 transition-all duration-300 animate-in fade-in">
-                {currentContent.dropdownTitles[activeDropdown as keyof typeof currentContent.dropdownTitles]}
-              </h3>
-              <button onClick={closeDropdown} className="p-1 rounded-full hover:bg-white/30 transition-colors">
-                <RotateCcw className="w-4 h-4 text-gray-600" />
+            {/* Header */}
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-3">
+                <RotateCcw className="w-4 h-4 sm:w-5 sm:h-5 text-gray-600" />
+                <h3 className="text-base sm:text-lg font-medium text-gray-900">
+                  {currentContent.dropdownTitles[activeDropdown as keyof typeof currentContent.dropdownTitles]}
+                </h3>
+              </div>
+              <button
+                onClick={closeDropdown}
+                className="w-6 h-6 flex items-center justify-center text-gray-500 hover:text-gray-700 transition-colors duration-200"
+              >
+                <X className="w-4 h-4" />
               </button>
             </div>
 
-            {/* İçerik Alanı - Tüm menüler burada render edilecek, sadece aktif olan görünecek */}
-            <div className="relative">
-              {/* Hakkımızda */}
-              <div className={activeDropdown === "hakkimizda" ? "block" : "hidden"}>
-                <div className="space-y-4">
-                  {/* Biz Kimiz? Toggle */}
-                  <div className="transition-all duration-500 delay-200 animate-in slide-in-from-left-2 fade-in">
-                    <div className="flex items-center justify-between py-2">
-                      <div className="flex items-center gap-3">
-                        <span className="text-sm text-gray-700 font-medium">
-                          {currentContent.hakkimizda.bizKimiz.title}
-                        </span>
-                      </div>
-                      <button
-                        onClick={() => setShowWhoWeAre(!showWhoWeAre)}
-                        className={`w-8 h-4 rounded-full relative transition-all duration-300 ${
-                          showWhoWeAre ? "bg-blue-500" : "bg-gray-300"
-                        }`}
-                      >
-                        <div
-                          className={`w-3 h-3 bg-white rounded-full absolute top-0.5 shadow-sm transition-all duration-300 ${
-                            showWhoWeAre ? "left-4" : "left-0.5"
-                          }`}
-                        ></div>
-                      </button>
-                    </div>
+            {/* Content */}
+            <div className="space-y-4">
+              {/* Subtitle for all dropdowns except Hakkımızda and Ekibimiz (as Ekibimiz has its own subtitle) */}
+              {activeDropdown !== "hakkimizda" && activeDropdown !== "ekibimiz" && (
+                <p className="text-xs sm:text-sm text-gray-600 font-medium transition-all duration-500 delay-200 animate-in slide-in-from-left-2 fade-in">
+                  {currentContent.dropdownSubtitles[activeDropdown as keyof typeof currentContent.dropdownSubtitles]}
+                </p>
+              )}
 
-                    {/* Biz Kimiz? Genişleyebilen İçerik */}
-                    {showWhoWeAre && (
-                      <div className="mt-4 p-4 bg-white/20 rounded-lg border border-white/20 transition-all duration-500 animate-in slide-in-from-top-2 fade-in">
-                        <div className="space-y-4 text-xs sm:text-sm text-gray-700">
-                          <div className="flex items-start gap-3">
-                            <Building2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                            <div>
-                              <p className="leading-relaxed">{currentContent.hakkimizda.bizKimiz.desc1}</p>
-                            </div>
-                          </div>
-                          <div className="flex items-start gap-3">
-                            <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-red-500 mt-0.5 flex-shrink-0" />
-                            <div>
-                              <p className="leading-relaxed">{currentContent.hakkimizda.bizKimiz.desc2}</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Vizyon - Misyon Toggle */}
-                  <div className="transition-all duration-500 delay-300 animate-in slide-in-from-left-2 fade-in">
-                    <div className="flex items-center justify-between py-2">
-                      <div className="flex items-center gap-3">
-                        <span className="text-sm text-gray-700 font-medium">
-                          {currentContent.hakkimizda.vizyonMisyon.title}
-                        </span>
-                      </div>
-                      <button
-                        onClick={() => setShowVisionMission(!showVisionMission)}
-                        className={`w-8 h-4 rounded-full relative transition-all duration-300 ${
-                          showVisionMission ? "bg-blue-500" : "bg-gray-300"
-                        }`}
-                      >
-                        <div
-                          className={`w-3 h-3 bg-white rounded-full absolute top-0.5 shadow-sm transition-all duration-300 ${
-                            showVisionMission ? "left-4" : "left-0.5"
-                          }`}
-                        ></div>
-                      </button>
-                    </div>
-
-                    {/* Vizyon - Misyon Genişleyebilen İçerik */}
-                    {showVisionMission && (
-                      <div className="mt-4 p-4 bg-white/20 rounded-lg border border-white/20 transition-all duration-500 animate-in slide-in-from-top-2 fade-in">
-                        <div className="space-y-4 text-xs sm:text-sm text-gray-700">
-                          <div className="flex items-start gap-3">
-                            <Target className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 mt-0.5 flex-shrink-0" />
-                            <div>
-                              <h4 className="font-medium text-gray-900 mb-2">
-                                {currentContent.hakkimizda.vizyonMisyon.visionTitle}
-                              </h4>
-                              <p className="leading-relaxed mb-1">
-                                {currentContent.hakkimizda.vizyonMisyon.visionDesc1}
-                              </p>
-                              <p className="leading-relaxed">{currentContent.hakkimizda.vizyonMisyon.visionDesc2}</p>
-                            </div>
-                          </div>
-                          <div className="flex items-start gap-3">
-                            <Users className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                            <div>
-                              <h4 className="font-medium text-gray-900 mb-2">
-                                {currentContent.hakkimizda.vizyonMisyon.missionTitle}
-                              </h4>
-                              <p className="leading-relaxed mb-1">
-                                {currentContent.hakkimizda.vizyonMisyon.missionDesc1}
-                              </p>
-                              <p className="leading-relaxed">{currentContent.hakkimizda.vizyonMisyon.missionDesc2}</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              {/* Çözümlerimiz */}
-              <div className={activeDropdown === "cozumlerimiz" ? "block" : "hidden"}>
+              {activeDropdown === "cozumlerimiz" && (
                 <div className="space-y-4">
                   {/* Sağlık Sistemleri Toggle */}
                   <div className="transition-all duration-500 delay-200 animate-in slide-in-from-left-2 fade-in">
@@ -1345,10 +1249,9 @@ export default function HomePage() {
                     )}
                   </div>
                 </div>
-              </div>
+              )}
 
-              {/* Sektörler */}
-              <div className={activeDropdown === "sektorler" ? "block" : "hidden"}>
+              {activeDropdown === "sektorler" && (
                 <div className="space-y-4">
                   <p className="text-xs sm:text-sm text-gray-600 font-medium mb-4">{currentContent.sectors.subtitle}</p>
                   {currentContent.sectors.items.map((sector) => {
@@ -1391,10 +1294,9 @@ export default function HomePage() {
                     )
                   })}
                 </div>
-              </div>
+              )}
 
-              {/* Başarı Hikayeleri */}
-              <div className={activeDropdown === "basari-hikayeleri" ? "block" : "hidden"}>
+              {activeDropdown === "basari-hikayeleri" && (
                 <div className="space-y-4">
                   <p className="text-xs sm:text-sm text-gray-600 font-medium mb-4">
                     {currentContent.successStories.subtitle}
@@ -1439,10 +1341,9 @@ export default function HomePage() {
                     )
                   })}
                 </div>
-              </div>
+              )}
 
-              {/* İletişim */}
-              <div className={activeDropdown === "iletisim" ? "block" : "hidden"}>
+              {activeDropdown === "iletisim" && (
                 <div className="space-y-4">
                   <p className="text-xs sm:text-sm text-gray-600 font-medium mb-4">{currentContent.contact.subtitle}</p>
                   {currentContent.contact.items.map((option) => {
@@ -1494,10 +1395,9 @@ export default function HomePage() {
                     )
                   })}
                 </div>
-              </div>
+              )}
 
-              {/* Ekibimiz */}
-              <div className={activeDropdown === "ekibimiz" ? "block" : "hidden"}>
+              {activeDropdown === "ekibimiz" && ( // New section for Ekibimiz
                 <div className="space-y-4">
                   <p className="text-xs sm:text-sm text-gray-600 font-medium transition-all duration-500 delay-200 animate-in slide-in-from-left-2 fade-in">
                     {currentContent.ekibimiz.subtitle}
@@ -1532,7 +1432,7 @@ export default function HomePage() {
                     )
                   })}
                 </div>
-              </div>
+              )}
 
               {activeDropdown === "mobile-menu" && (
                 <div className="space-y-3">
@@ -1598,6 +1498,108 @@ export default function HomePage() {
                       <Brain className="w-4 h-4" />
                       {currentContent.menu.ekibimiz}
                     </button>
+                  </div>
+                </div>
+              )}
+
+              {activeDropdown === "hakkimizda" && (
+                <div className="space-y-4">
+                  {/* Biz Kimiz? Toggle */}
+                  <div className="transition-all duration-500 delay-200 animate-in slide-in-from-left-2 fade-in">
+                    <div className="flex items-center justify-between py-2">
+                      <div className="flex items-center gap-3">
+                        <span className="text-sm text-gray-700 font-medium">
+                          {currentContent.hakkimizda.bizKimiz.title}
+                        </span>
+                      </div>
+                      <button
+                        onClick={() => setShowWhoWeAre(!showWhoWeAre)}
+                        className={`w-8 h-4 rounded-full relative transition-all duration-300 ${
+                          showWhoWeAre ? "bg-blue-500" : "bg-gray-300"
+                        }`}
+                      >
+                        <div
+                          className={`w-3 h-3 bg-white rounded-full absolute top-0.5 shadow-sm transition-all duration-300 ${
+                            showWhoWeAre ? "left-4" : "left-0.5"
+                          }`}
+                        ></div>
+                      </button>
+                    </div>
+
+                    {/* Biz Kimiz? Genişleyebilen İçerik */}
+                    {showWhoWeAre && (
+                      <div className="mt-4 p-4 bg-white/20 rounded-lg border border-white/20 transition-all duration-500 animate-in slide-in-from-top-2 fade-in">
+                        <div className="space-y-4 text-xs sm:text-sm text-gray-700">
+                          <div className="flex items-start gap-3">
+                            <Building2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                            <div>
+                              <p className="leading-relaxed">{currentContent.hakkimizda.bizKimiz.desc1}</p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <Heart className="w-4 h-4 sm:w-5 sm:h-5 text-red-500 mt-0.5 flex-shrink-0" />
+                            <div>
+                              <p className="leading-relaxed">{currentContent.hakkimizda.bizKimiz.desc2}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Vizyon - Misyon Toggle */}
+                  <div className="transition-all duration-500 delay-300 animate-in slide-in-from-left-2 fade-in">
+                    <div className="flex items-center justify-between py-2">
+                      <div className="flex items-center gap-3">
+                        <span className="text-sm text-gray-700 font-medium">
+                          {currentContent.hakkimizda.vizyonMisyon.title}
+                        </span>
+                      </div>
+                      <button
+                        onClick={() => setShowVisionMission(!showVisionMission)}
+                        className={`w-8 h-4 rounded-full relative transition-all duration-300 ${
+                          showVisionMission ? "bg-blue-500" : "bg-gray-300"
+                        }`}
+                      >
+                        <div
+                          className={`w-3 h-3 bg-white rounded-full absolute top-0.5 shadow-sm transition-all duration-300 ${
+                            showVisionMission ? "left-4" : "left-0.5"
+                          }`}
+                        ></div>
+                      </button>
+                    </div>
+
+                    {/* Vizyon - Misyon Genişleyebilen İçerik */}
+                    {showVisionMission && (
+                      <div className="mt-4 p-4 bg-white/20 rounded-lg border border-white/20 transition-all duration-500 animate-in slide-in-from-top-2 fade-in">
+                        <div className="space-y-4 text-xs sm:text-sm text-gray-700">
+                          <div className="flex items-start gap-3">
+                            <Target className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                            <div>
+                              <h4 className="font-medium text-gray-900 mb-2">
+                                {currentContent.hakkimizda.vizyonMisyon.visionTitle}
+                              </h4>
+                              <p className="leading-relaxed mb-1">
+                                {currentContent.hakkimizda.vizyonMisyon.visionDesc1}
+                              </p>
+                              <p className="leading-relaxed">{currentContent.hakkimizda.vizyonMisyon.visionDesc2}</p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <Users className="w-4 h-4 sm:w-5 sm:h-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                            <div>
+                              <h4 className="font-medium text-gray-900 mb-2">
+                                {currentContent.hakkimizda.vizyonMisyon.missionTitle}
+                              </h4>
+                              <p className="leading-relaxed mb-1">
+                                {currentContent.hakkimizda.vizyonMisyon.missionDesc1}
+                              </p>
+                              <p className="leading-relaxed">{currentContent.hakkimizda.vizyonMisyon.missionDesc2}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
