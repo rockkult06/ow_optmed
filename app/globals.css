@@ -90,5 +90,29 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  /* Mobil optimizasyonları */
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+    
+    body {
+      line-height: 1.4;
+    }
+    
+    /* Touch-friendly minimum sizes */
+    button, input, select, textarea {
+      min-height: 44px;
+    }
+    
+    /* Prevent text scaling on orientation change */
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
   }
 }

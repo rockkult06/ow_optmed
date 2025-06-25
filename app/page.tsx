@@ -1351,9 +1351,9 @@ export default function HomePage() {
             <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 text-gray-900" />
           </div>
 
-          {/* Orta: Menü */}
+          {/* Orta: Menü - Desktop */}
           <nav
-            className="flex items-center space-x-2 sm:space-x-6 bg-[#EBECEC]/55 rounded-lg px-3 py-2 sm:px-6 sm:py-3 shadow-md flex-wrap justify-center"
+            className="hidden md:flex items-center space-x-2 sm:space-x-6 bg-[#EBECEC]/55 rounded-lg px-3 py-2 sm:px-6 sm:py-3 shadow-md flex-wrap justify-center"
             onMouseLeave={() => setHoveredMenuItem(null)}
           >
             <button
@@ -1424,6 +1424,21 @@ export default function HomePage() {
             </button>
           </nav>
 
+          {/* Mobil Menü Butonu */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => toggleDropdown("mobile-menu")}
+              className="bg-[#EBECEC]/55 rounded-lg px-3 py-2 shadow-md flex items-center gap-2 hover:bg-[#EBECEC]/70 transition-all duration-300"
+            >
+              <span className="text-xs font-medium text-gray-900">Menü</span>
+              <div className="w-4 h-4 flex flex-col justify-center space-y-1">
+                <div className="w-full h-0.5 bg-gray-900"></div>
+                <div className="w-full h-0.5 bg-gray-900"></div>
+                <div className="w-full h-0.5 bg-gray-900"></div>
+              </div>
+            </button>
+          </div>
+
           {/* Sağ: Dil Seçeneği */}
           <div className="flex items-center">
             <button
@@ -1455,9 +1470,17 @@ export default function HomePage() {
 
       {/* Dropdown Menu */}
       {activeDropdown && (
-        <div className="absolute top-[60px] sm:top-[75px] left-1/2 transform -translate-x-1/2 z-40 transition-all duration-1000 ease-out">
+        <div className={`absolute z-40 transition-all duration-1000 ease-out ${
+          activeDropdown === 'mobile-menu' 
+            ? 'top-[60px] right-4 sm:top-[75px]' 
+            : 'top-[60px] sm:top-[75px] left-1/2 transform -translate-x-1/2'
+        }`}>
           <div
-            className="bg-white/30 backdrop-blur-lg rounded-2xl shadow-xl border border-white/10 p-4 sm:p-6 w-[95vw] sm:w-[580px] transform origin-top transition-all duration-1000 ease-out animate-in slide-in-from-top-1 fade-in scale-in-95"
+            className={`bg-white/30 backdrop-blur-lg rounded-2xl shadow-xl border border-white/10 p-4 sm:p-6 transform origin-top transition-all duration-1000 ease-out animate-in slide-in-from-top-1 fade-in scale-in-95 ${
+              activeDropdown === 'mobile-menu' 
+                ? 'w-[280px]' 
+                : 'w-[95vw] sm:w-[580px]'
+            }`}
             style={{
               transformOrigin: "top center",
               animationFillMode: "both",
@@ -1760,6 +1783,74 @@ export default function HomePage() {
                       </div>
                     )
                   })}
+                </div>
+              )}
+
+              {activeDropdown === "mobile-menu" && (
+                <div className="space-y-3">
+                  <h3 className="text-base font-medium text-gray-900 mb-4">Menü</h3>
+                  <div className="space-y-2">
+                    <button
+                      onClick={() => {
+                        closeDropdown()
+                        toggleDropdown("hakkimizda")
+                      }}
+                      className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-white/30 rounded-lg transition-colors duration-200 flex items-center gap-2"
+                    >
+                      <Users className="w-4 h-4" />
+                      {currentContent.menu.hakkimizda}
+                    </button>
+                    <button
+                      onClick={() => {
+                        closeDropdown()
+                        toggleDropdown("cozumlerimiz")
+                      }}
+                      className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-white/30 rounded-lg transition-colors duration-200 flex items-center gap-2"
+                    >
+                      <Puzzle className="w-4 h-4" />
+                      {currentContent.menu.cozumlerimiz}
+                    </button>
+                    <button
+                      onClick={() => {
+                        closeDropdown()
+                        toggleDropdown("sektorler")
+                      }}
+                      className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-white/30 rounded-lg transition-colors duration-200 flex items-center gap-2"
+                    >
+                      <Building className="w-4 h-4" />
+                      {currentContent.menu.sektorler}
+                    </button>
+                    <button
+                      onClick={() => {
+                        closeDropdown()
+                        toggleDropdown("basari-hikayeleri")
+                      }}
+                      className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-white/30 rounded-lg transition-colors duration-200 flex items-center gap-2"
+                    >
+                      <TrendingUp className="w-4 h-4" />
+                      {currentContent.menu.basariHikayeleri}
+                    </button>
+                    <button
+                      onClick={() => {
+                        closeDropdown()
+                        toggleDropdown("iletisim")
+                      }}
+                      className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-white/30 rounded-lg transition-colors duration-200 flex items-center gap-2"
+                    >
+                      <Handshake className="w-4 h-4" />
+                      {currentContent.menu.iletisim}
+                    </button>
+                    <button
+                      onClick={() => {
+                        closeDropdown()
+                        toggleDropdown("ekibimiz")
+                      }}
+                      className="w-full text-left px-3 py-2 text-sm text-gray-700 hover:bg-white/30 rounded-lg transition-colors duration-200 flex items-center gap-2"
+                    >
+                      <Brain className="w-4 h-4" />
+                      {currentContent.menu.ekibimiz}
+                    </button>
+                  </div>
                 </div>
               )}
 
@@ -2083,12 +2174,12 @@ export default function HomePage() {
       )}
 
       {/* CTA Button */}
-      <div className="absolute top-[80px] sm:top-[100px] left-1/2 -translate-x-1/2 z-10">
+      <div className="absolute top-[70px] sm:top-[100px] left-1/2 -translate-x-1/2 z-10">
         <button
           onClick={handleCtaClick} // Updated onClick to open the new modal
-          className="bg-[#EBECEC]/50 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors px-2 py-1 shadow-md inline-flex items-center gap-2 min-w-[100px] justify-between"
+          className="bg-[#EBECEC]/50 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors px-3 py-2 sm:px-2 sm:py-1 shadow-md inline-flex items-center gap-2 min-w-[120px] sm:min-w-[100px] justify-between"
         >
-          <span className="text-xs">{currentContent.hero.cta}</span>
+          <span className="text-xs sm:text-xs">{currentContent.hero.cta}</span>
           <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center">
             <ArrowRight className="w-4 h-4 text-[#0171E3]" />
           </div>
@@ -2096,9 +2187,9 @@ export default function HomePage() {
       </div>
 
       {/* Hero Section */}
-      <main className="flex-grow relative flex items-center justify-center">
+      <main className="flex-grow relative flex items-center justify-center px-4 pt-16 sm:pt-0">
         {/* Ortalanmış Görsel - Tek görsel ve opaklık animasyonu */}
-        <div className="relative w-full max-w-[300px] h-[360px] sm:max-w-[500px] sm:h-[600px]">
+        <div className="relative w-full max-w-[280px] h-[320px] sm:max-w-[500px] sm:h-[600px]">
           <img
             src={heroImage || "/placeholder.svg"}
             alt="3D rendered human head with neural network pattern overlay representing AI and medical data analysis"
@@ -2106,24 +2197,26 @@ export default function HomePage() {
           />
         </div>
 
-        {/* Sol altta metin */}
-        <div className="absolute bottom-10 left-5 sm:bottom-20 sm:left-10 z-20 text-left">
-          <h1 className="text-6xl sm:text-8xl font-bold text-gray-900 leading-none">OW</h1>
-          <p className="text-lg sm:text-xl text-gray-700 mt-2">{currentContent.hero.slogan}</p>
+        {/* Sol altta metin - Mobilde üstte */}
+        <div className="absolute bottom-16 left-5 sm:bottom-20 sm:left-10 z-20 text-left">
+          <h1 className="text-5xl sm:text-8xl font-bold text-gray-900 leading-none">OW</h1>
+          <p className="text-base sm:text-xl text-gray-700 mt-2 max-w-[280px] sm:max-w-none">{currentContent.hero.slogan}</p>
         </div>
       </main>
 
       {/* Bottom Tags */}
-      <div className="absolute bottom-4 left-4 w-full max-w-full flex flex-wrap items-center space-x-2 sm:space-x-3 justify-start z-20 pr-4">
-        <span className="text-[#AEADAD] font-normal text-sm sm:text-base">{currentContent.bottomTags.explore}</span>
-        {currentContent.bottomTags.tags.map((tag, index) => (
-          <span
-            key={index}
-            className="px-3 py-1 sm:px-4 sm:py-2 bg-transparent border border-[#0171E3] rounded-full text-xs sm:text-sm text-[#0171E3] hover:bg-[#0171E3]/10 transition-colors cursor-pointer font-normal mt-1"
-          >
-            {tag}
-          </span>
-        ))}
+      <div className="absolute bottom-4 left-4 right-4 flex flex-wrap items-center gap-2 justify-start z-20">
+        <span className="text-[#AEADAD] font-normal text-xs sm:text-base mb-1 w-full sm:w-auto">{currentContent.bottomTags.explore}</span>
+        <div className="flex flex-wrap gap-2">
+          {currentContent.bottomTags.tags.map((tag, index) => (
+            <span
+              key={index}
+              className="px-2 py-1 sm:px-4 sm:py-2 bg-transparent border border-[#0171E3] rounded-full text-xs sm:text-sm text-[#0171E3] hover:bg-[#0171E3]/10 transition-colors cursor-pointer font-normal"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   )
