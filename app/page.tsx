@@ -616,27 +616,27 @@ const content = {
         },
         {
           id: "smart-city-projects",
-          title: "Akıllı Şehir Projeleri",
+          title: "Smart City Projects",
           icon: City,
           iconColor: "text-purple-600",
-          shortDescription: "Urban intelligence integrating health, transport, and environmental data.",
-          longDescription: `OW analyzes various urban infrastructure systems under one roof, enabling sustainable, human-centric urban living.`,
+          shortDescription: "Urban intelligence that integrates health, transportation, and environmental data.",
+          longDescription: `OW enables sustainable, human-centric urban life by analyzing the different infrastructure systems of cities under a single roof.`,
         },
         {
           id: "universities-research",
-          title: "🎓 Üniversiteler & Araştırma Kurumları",
+          title: "Universities & Research Institutions",
           icon: GraduationCap,
           iconColor: "text-orange-600",
-          shortDescription: "Bilimsel analizlerde güçlü veri altyapısı ve yapay zekâ desteği.",
-          longDescription: `Araştırma projelerinde büyük veri setlerinin temizlenmesi, analizi ve görselleştirilmesi için ideal platform. Özellikle sağlık ve şehir planlama alanlarında veri güdümlü akademik çalışmaları destekler.`,
+          shortDescription: "Powerful data infrastructure and AI support for scientific analyses.",
+          longDescription: `An ideal platform for cleaning, analyzing, and visualizing large datasets in research projects. It especially supports data-driven academic studies in the fields of health and urban planning.`,
         },
         {
           id: "ministries-public",
-          title: "Sağlık Bakanlıkları & Kamu Kurumları",
+          title: "Ministries & Public Institutions",
           icon: Government,
           iconColor: "text-red-600",
-          shortDescription: "Ulusal düzeyde sağlık politikalarını veriyle şekillendirin.",
-          longDescription: `Karar destek sistemleri, epidemiyolojik modelleme ve sistem entegrasyonu alanlarında OW, kamu kurumlarına kapsamlı analiz ve izleme araçları sunar. Veriye dayalı politika üretiminin temelini oluşturur.`,
+          shortDescription: "Shape national health policies with data.",
+          longDescription: `OW offers comprehensive analysis and monitoring tools to public institutions in the areas of decision support systems, epidemiological modeling, and system integration. It forms the basis of data-driven policy production.`,
         },
       ],
     },
@@ -1414,10 +1414,10 @@ export default function HomePage() {
                         >
                           <div className="flex items-center gap-3">
                             <IconComponent className={`w-4 h-4 sm:w-5 sm:h-5 ${member.iconColor} flex-shrink-0`} />
-                            <div>
+                        <div>
                               <h4 className="font-medium text-gray-900 text-sm">{member.title}</h4>
                               <p className="text-xs text-gray-600">{member.shortDescription}</p>
-                            </div>
+                        </div>
                           </div>
                           <ChevronDown className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
                         </button>
