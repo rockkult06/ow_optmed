@@ -793,48 +793,48 @@ const content = {
     },
     bottomTags: {
       explore: "Keşfet:",
-      tags: ["Tıbbi Veri Analizi", "Karar Destek", "Yapay Zeka Uygulamaları", "Klinik Araştırmalar"],
+      tags: ["Medical Data Analysis", "Decision Support", "AI Applications", "Clinical Research"],
     },
     ctaModal: {
       title: "OW – Optimize the World",
-      description: "Veri odaklı karar destek sistemleriyle daha sağlıklı, daha verimli bir dünya inşa ediyoruz.",
+      description: "We are building a healthier, more efficient world with data-driven decision support systems.",
       overview:
-        "OW, sağlık sistemleri ve kentsel altyapılar için veri bilimi, optimizasyon algoritmaları ve yapay zekâ temelli çözümler geliştiren çok disiplinli bir teknoloji kuruluşudur. Temel hedefimiz; kamu ve özel sektör kurumlarının karar alma süreçlerini bilimsel yöntemlerle güçlendirmek, kaynak kullanımını optimize etmek ve hizmet kalitesini ölçülebilir biçimde artırmaktır.",
+        "OW is a multidisciplinary technology organization that develops solutions based on data science, optimization algorithms, and artificial intelligence for healthcare systems and urban infrastructures. Our main goal is to strengthen the decision-making processes of public and private sector institutions with scientific methods, optimize resource utilization, and measurably increase service quality.",
       expertiseAreas: {
-        title: "Uzmanlık Alanlarımız",
+        title: "Our Areas of Expertise",
         healthSystems: {
-          title: "🩺 Sağlık Sistemleri İçin Karar Destek Çözümleri",
+          title: "🩺 Decision Support Solutions for Health Systems",
           description:
-            "OW; hastaneler, klinikler, aile sağlığı merkezleri ve sağlık bakanlıkları gibi sağlık hizmet sunucularına yönelik olarak, aşağıdaki konularda veri destekli teknolojiler sunar:",
+            "OW offers data-supported technologies to healthcare providers such as hospitals, clinics, family health centers, and ministries of health in the following areas:",
           points: [
-            "Klinik karar destek sistemleri",
-            "Gerçek zamanlı sağlık verisi analizi",
-            "Risk skorlamaları ve erken uyarı algoritmaları",
-            "Sağlık hizmet zinciri entegrasyonu",
-            "Hasta profilleme ve tedavi optimizasyonu",
+            "Clinical decision support systems",
+            "Real-time health data analysis",
+            "Risk scoring and early warning algorithms",
+            "Healthcare service chain integration",
+            "Patient profiling and treatment optimization",
           ],
           products:
-            "Bu kapsamda geliştirdiğimiz OW Insight™, OW Decisions™ ve OW Signals™ ürün ailesi, tanı-tedavi süreçlerinde doğruluk, hız ve maliyet etkinliği sağlar.",
+            "Our OW Insight™, OW Decisions™, and OW Signals™ product family, developed in this context, provides accuracy, speed, and cost-effectiveness in diagnosis and treatment processes.",
         },
         healthyCities: {
-          title: "Sağlıklı Kentler için Akıllı Kentsel Sistemler",
+          title: "Smart Urban Systems for Healthy Cities",
           description:
-            "OW, şehir planlamasında ve toplu taşıma yönetiminde karar vericilere yönelik yüksek doğruluklu analitik modeller ve optimizasyon araçları sunar:",
+            "OW offers high-accuracy analytical models and optimization tools for decision-makers in urban planning and public transportation management:",
           points: [
-            "Ulaşım ağı optimizasyonu",
-            "Yolcu yoğunluğu tahmini",
-            "Ölü kilometre (dead mileage) azaltımı",
-            "Karbon salımı ve çevresel etki analizleri",
-            "Kentsel sağlık hizmetlerine erişim modellemeleri",
+            "Transportation network optimization",
+            "Passenger density prediction",
+            "Dead mileage reduction",
+            "Carbon emission and environmental impact analyses",
+            "Urban healthcare access modeling",
           ],
           products:
-            "Bu doğrultuda geliştirilen OW TransitOpt™, OW RiderSense™ ve OW CostLogic™ çözümleri, kentlerin hem operasyonel verimliliğini hem de sürdürülebilirlik hedeflerini destekler.",
+            "The OW TransitOpt™, OW RiderSense™, and OW CostLogic™ solutions developed for this purpose support both the operational efficiency and sustainability goals of cities.",
         },
       },
       scientificApproach: {
-        title: "Bilimsel Yaklaşım ve Multidisipliner Ekip",
+        title: "Scientific Approach and Multidisciplinary Team",
         description:
-          "OW bünyesindeki ekip; istatistik, ekonomi, sistem mühendisliği, şehir planlama, bilgisayar bilimi ve sağlık bilimleri gibi farklı alanlardan gelen uzmanlardan oluşur. Bu sayede her çözümümüz; akademik geçerliliği olan, sahada test edilmiş ve yüksek etki potansiyeli taşıyan yapılar üzerine inşa edilir.",
+          "The team within OW consists of experts from different fields such as statistics, economics, systems engineering, urban planning, computer science, and health sciences. Thus, each of our solutions is built on academically validated, field-tested structures with high impact potential.",
       },
     },
   },
