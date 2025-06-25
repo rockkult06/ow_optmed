@@ -87,7 +87,7 @@ const content = {
     },
     products: {
       healthSystems: {
-        title: "🚑 Sağlık Sistemleri",
+        title: "Sağlık Sistemleri",
         subtitle: "Veriyle güçlenen sağlık kararları.",
         items: [
           {
@@ -133,7 +133,7 @@ const content = {
         ],
       },
       healthyCities: {
-        title: "🏙️ Sağlıklı Kent Çözümleri",
+        title: "Sağlıklı Kent Çözümleri",
         subtitle: "Veriyle planlanan, insan odaklı kentler.",
         items: [
           {
@@ -200,7 +200,7 @@ const content = {
       items: [
         {
           id: "hospitals-clinics",
-          title: "🏥 Hastaneler & Klinikler",
+          title: "Hastaneler & Klinikler",
           icon: BriefcaseMedical,
           iconColor: "text-blue-600",
           shortDescription: "Tanıdan tedaviye, veriyle güçlenen sağlık hizmetleri.",
@@ -208,7 +208,7 @@ const content = {
         },
         {
           id: "municipalities-transport",
-          title: "🏛️ Belediyeler & Ulaşım Daireleri",
+          title: "Belediyeler & Ulaşım Daireleri",
           icon: Building,
           iconColor: "text-green-600",
           shortDescription: "Şehir içi ulaşım ağları için bilimsel planlama gücü.",
@@ -216,7 +216,7 @@ const content = {
         },
         {
           id: "smart-city-projects",
-          title: "🏙️ Akıllı Şehir Projeleri",
+          title: "Akıllı Şehir Projeleri",
           icon: City,
           iconColor: "text-purple-600",
           shortDescription: "Sağlık, ulaşım ve çevre verisini entegre eden kent zekâsı.",
@@ -224,7 +224,7 @@ const content = {
         },
         {
           id: "universities-research",
-          title: "🎓 Üniversiteler & Araştırma Kurumları",
+          title: "Üniversiteler & Araştırma Kurumları",
           icon: GraduationCap,
           iconColor: "text-orange-600",
           shortDescription: "Bilimsel analizlerde güçlü veri altyapısı ve yapay zekâ desteği.",
@@ -232,7 +232,7 @@ const content = {
         },
         {
           id: "ministries-public",
-          title: "🏥 Sağlık Bakanlıkları & Kamu Kurumları",
+          title: "Sağlık Bakanlıkları & Kamu Kurumları",
           icon: Government,
           iconColor: "text-red-600",
           shortDescription: "Ulusal düzeyde sağlık politikalarını veriyle şekillendirin.",
@@ -253,7 +253,7 @@ const content = {
         },
         {
           id: "hospital-early-diagnosis",
-          title: "🏥 Kamu Hastanesinde OW Decisions™ ile Erken Teşhis",
+          title: "Kamu Hastanesinde OW Decisions™ ile Erken Teşhis",
           icon: Stethoscope,
           iconColor: "text-green-600",
           shortDescription: "Orta ölçekli bir devlet hastanesinde tanı süreci veriye dayalı önerilerle desteklendi.",
@@ -261,7 +261,7 @@ const content = {
         },
         {
           id: "passenger-density-cost-saving",
-          title: "👥 Yolcu Yoğunluğu Modellemesiyle Maliyet Tasarrufu",
+          title: "Yolcu Yoğunluğu Modellemesiyle Maliyet Tasarrufu",
           icon: Users,
           iconColor: "text-purple-600",
           shortDescription: "Gerçek zamanlı yolcu tahmin modeliyle belediye toplu taşıma sisteminde tasarruf sağlandı.",
@@ -269,7 +269,7 @@ const content = {
         },
         {
           id: "dead-km-minimization",
-          title: "🚌 Veriye Dayalı Ölü Km Minimizasyon Modeli",
+          title: "Veriye Dayalı Ölü Km Minimizasyon Modeli",
           icon: Truck,
           iconColor: "text-orange-600",
           shortDescription: "Filo planlamasında ölü kilometreyi azaltmak için çözümler uygulandı.",
@@ -283,7 +283,7 @@ const content = {
       items: [
         {
           id: "demo-form",
-          title: "🚀 Hızlı Demo Formu",
+          title: "Hızlı Demo Formu",
           icon: FormInput,
           iconColor: "text-blue-600",
           shortDescription: "OW çözümlerinin sizin kurumunuz için nasıl çalışacağını görmek ister misiniz?",
@@ -295,7 +295,7 @@ const content = {
         },
         {
           id: "partnership-application",
-          title: "🤝 İş Ortaklığı Başvurusu",
+          title: "İş Ortaklığı Başvurusu",
           icon: Handshake,
           iconColor: "text-green-600",
           shortDescription:
@@ -304,7 +304,7 @@ const content = {
         },
         {
           id: "press-media",
-          title: "📰 Basın & Medya İletişimi",
+          title: "Basın & Medya İletişimi",
           icon: Newspaper,
           iconColor: "text-purple-600",
           shortDescription:
@@ -313,7 +313,7 @@ const content = {
         },
         {
           id: "locations",
-          title: "🌍 Lokasyon & Temsilcilikler",
+          title: "Lokasyon & Temsilcilikler",
           icon: Map,
           iconColor: "text-orange-600",
           shortDescription: "OW, Türkiye merkezli olup Avrupa ve ABD'de temsilcilik ağına sahiptir.",
@@ -342,7 +342,7 @@ const content = {
       items: [
         {
           id: "akademisyen-istatistikci",
-          title: "📊 Akademisyen İstatistikçi",
+          title: "İstatistik Uzmanı",
           icon: BarChart3,
           iconColor: "text-blue-600",
           shortDescription: "Sayılarla geleceği öngörüyor.",
@@ -351,7 +351,7 @@ const content = {
         },
         {
           id: "ekonomist",
-          title: "💸 Ekonomist",
+          title: "Ekonomist",
           icon: DollarSign,
           iconColor: "text-green-600",
           shortDescription: "Verimliliği sadece maliyetle değil, yaşam kalitesiyle ölçüyor.",
@@ -360,7 +360,7 @@ const content = {
         },
         {
           id: "veri-muhendisi",
-          title: "🧠 Veri Mühendisi",
+          title: "Veri Mühendisi",
           icon: Database,
           iconColor: "text-purple-600",
           shortDescription: "Verinin kaostan düzene geçtiği kişi.",
@@ -369,7 +369,7 @@ const content = {
         },
         {
           id: "yuksek-sehir-plancisi",
-          title: "🏙️ Yüksek Şehir Plancısı",
+          title: "Yüksek Şehir Plancısı",
           icon: City,
           iconColor: "text-orange-600",
           shortDescription: "Şehri sadece yollarla değil, insanla birlikte tasarlar.",
@@ -378,7 +378,7 @@ const content = {
         },
         {
           id: "sistem-muhendisi",
-          title: "🧩 Sistem Mühendisi",
+          title: "Sistem Mühendisi",
           icon: Puzzle,
           iconColor: "text-red-600",
           shortDescription: "Her bileşeni bir bütün içinde optimize eder.",
@@ -417,7 +417,7 @@ const content = {
             "Bu kapsamda geliştirdiğimiz OW Insight™, OW Decisions™ ve OW Signals™ ürün ailesi, tanı-tedavi süreçlerinde doğruluk, hız ve maliyet etkinliği sağlar.",
         },
         healthyCities: {
-          title: "🏙️ Sağlıklı Kentler için Akıllı Kentsel Sistemler",
+          title: "Sağlıklı Kentler için Akıllı Kentsel Sistemler",
           description:
             "OW, şehir planlamasında ve toplu taşıma yönetiminde karar vericilere yönelik yüksek doğruluklu analitik modeller ve optimizasyon araçları sunar:",
           points: [
@@ -432,7 +432,7 @@ const content = {
         },
       },
       scientificApproach: {
-        title: "🧩 Bilimsel Yaklaşım ve Multidisipliner Ekip",
+        title: "Bilimsel Yaklaşım ve Multidisipliner Ekip",
         description:
           "OW bünyesindeki ekip; istatistik, ekonomi, sistem mühendisliği, şehir planlama, bilgisayar bilimi ve sağlık bilimleri gibi farklı alanlardan gelen uzmanlardan oluşur. Bu sayede her çözümümüz; akademik geçerliliği olan, sahada test edilmiş ve yüksek etki potansiyeli taşıyan yapılar üzerine inşa edilir.",
       },
@@ -483,7 +483,7 @@ const content = {
     },
     products: {
       healthSystems: {
-        title: "🚑 Health Systems",
+        title: "Health Systems",
         subtitle: "Data-powered healthcare decisions.",
         items: [
           {
@@ -529,7 +529,7 @@ const content = {
         ],
       },
       healthyCities: {
-        title: "🏙️ Healthy City Solutions",
+        title: "Healthy City Solutions",
         subtitle: "Data-planned, human-centric cities.",
         items: [
           {
@@ -597,7 +597,7 @@ const content = {
       items: [
         {
           id: "hospitals-clinics",
-          title: "🏥 Hospitals & Clinics",
+          title: "Hospitals & Clinics",
           icon: BriefcaseMedical,
           iconColor: "text-blue-600",
           shortDescription: "Data-powered healthcare services from diagnosis to treatment.",
@@ -605,7 +605,7 @@ const content = {
         },
         {
           id: "municipalities-transport",
-          title: "🏛️ Municipalities & Transport Departments",
+          title: "Municipalities & Transport Departments",
           icon: Building,
           iconColor: "text-green-600",
           shortDescription: "Scientific planning power for urban transportation networks.",
@@ -613,7 +613,7 @@ const content = {
         },
         {
           id: "smart-city-projects",
-          title: "🏙️ Akıllı Şehir Projeleri",
+          title: "Akıllı Şehir Projeleri",
           icon: City,
           iconColor: "text-purple-600",
           shortDescription: "Urban intelligence integrating health, transport, and environmental data.",
@@ -629,7 +629,7 @@ const content = {
         },
         {
           id: "ministries-public",
-          title: "🏥 Sağlık Bakanlıkları & Kamu Kurumları",
+          title: "Sağlık Bakanlıkları & Kamu Kurumları",
           icon: Government,
           iconColor: "text-red-600",
           shortDescription: "Ulusal düzeyde sağlık politikalarını veriyle şekillendirin.",
@@ -650,7 +650,7 @@ const content = {
         },
         {
           id: "hospital-early-diagnosis",
-          title: "🏥 Kamu Hastanesinde OW Decisions™ ile Erken Teşhis",
+          title: "Kamu Hastanesinde OW Decisions™ ile Erken Teşhis",
           icon: Stethoscope,
           iconColor: "text-green-600",
           shortDescription: "Orta ölçekli bir devlet hastanesinde tanı süreci veriye dayalı önerilerle desteklendi.",
@@ -658,7 +658,7 @@ const content = {
         },
         {
           id: "passenger-density-cost-saving",
-          title: "👥 Yolcu Yoğunluğu Modellemesiyle Maliyet Tasarrufu",
+          title: "Yolcu Yoğunluğu Modellemesiyle Maliyet Tasarrufu",
           icon: Users,
           iconColor: "text-purple-600",
           shortDescription: "Gerçek zamanlı yolcu tahmin modeliyle belediye toplu taşıma sisteminde tasarruf sağlandı.",
@@ -666,7 +666,7 @@ const content = {
         },
         {
           id: "dead-km-minimization",
-          title: "🚌 Veriye Dayalı Ölü Km Minimizasyon Modeli",
+          title: "Veriye Dayalı Ölü Km Minimizasyon Modeli",
           icon: Truck,
           iconColor: "text-orange-600",
           shortDescription: "Filo planlamasında ölü kilometreyi azaltmak için çözümler uygulandı.",
@@ -680,7 +680,7 @@ const content = {
       items: [
         {
           id: "demo-form",
-          title: "🚀 Hızlı Demo Formu",
+          title: "Hızlı Demo Formu",
           icon: FormInput,
           iconColor: "text-blue-600",
           shortDescription: "OW çözümlerinin sizin kurumunuz için nasıl çalışacağını görmek ister misiniz?",
@@ -692,7 +692,7 @@ const content = {
         },
         {
           id: "partnership-application",
-          title: "🤝 İş Ortaklığı Başvurusu",
+          title: "İş Ortaklığı Başvurusu",
           icon: Handshake,
           iconColor: "text-green-600",
           shortDescription:
@@ -701,7 +701,7 @@ const content = {
         },
         {
           id: "press-media",
-          title: "📰 Basın & Medya İletişimi",
+          title: "Basın & Medya İletişimi",
           icon: Newspaper,
           iconColor: "text-purple-600",
           shortDescription:
@@ -710,7 +710,7 @@ const content = {
         },
         {
           id: "locations",
-          title: "🌍 Lokasyon & Temsilcilikler",
+          title: "Lokasyon & Temsilcilikler",
           icon: Map,
           iconColor: "text-orange-600",
           shortDescription: "OW, Türkiye merkezli olup Avrupa ve ABD'de temsilcilik ağına sahiptir.",
@@ -739,7 +739,7 @@ const content = {
       items: [
         {
           id: "akademisyen-istatistikci",
-          title: "📊 Akademisyen İstatistikçi",
+          title: "Akademisyen İstatistikçi",
           icon: BarChart3,
           iconColor: "text-blue-600",
           shortDescription: "Sayılarla geleceği öngörüyor.",
@@ -748,7 +748,7 @@ const content = {
         },
         {
           id: "ekonomist",
-          title: "💸 Ekonomist",
+          title: "Ekonomist",
           icon: DollarSign,
           iconColor: "text-green-600",
           shortDescription: "Verimliliği sadece maliyetle değil, yaşam kalitesiyle ölçüyor.",
@@ -757,7 +757,7 @@ const content = {
         },
         {
           id: "veri-muhendisi",
-          title: "🧠 Veri Mühendisi",
+          title: "Veri Mühendisi",
           icon: Database,
           iconColor: "text-purple-600",
           shortDescription: "Verinin kaostan düzene geçtiği kişi.",
@@ -766,7 +766,7 @@ const content = {
         },
         {
           id: "yuksek-sehir-plancisi",
-          title: "🏙️ Yüksek Şehir Plancısı",
+          title: "Yüksek Şehir Plancısı",
           icon: City,
           iconColor: "text-orange-600",
           shortDescription: "Şehri sadece yollarla değil, insanla birlikte tasarlar.",
@@ -775,7 +775,7 @@ const content = {
         },
         {
           id: "sistem-muhendisi",
-          title: "🧩 Sistem Mühendisi",
+          title: "Sistem Mühendisi",
           icon: Puzzle,
           iconColor: "text-red-600",
           shortDescription: "Her bileşeni bir bütün içinde optimize eder.",
@@ -814,7 +814,7 @@ const content = {
             "Bu kapsamda geliştirdiğimiz OW Insight™, OW Decisions™ ve OW Signals™ ürün ailesi, tanı-tedavi süreçlerinde doğruluk, hız ve maliyet etkinliği sağlar.",
         },
         healthyCities: {
-          title: "🏙️ Sağlıklı Kentler için Akıllı Kentsel Sistemler",
+          title: "Sağlıklı Kentler için Akıllı Kentsel Sistemler",
           description:
             "OW, şehir planlamasında ve toplu taşıma yönetiminde karar vericilere yönelik yüksek doğruluklu analitik modeller ve optimizasyon araçları sunar:",
           points: [
@@ -829,7 +829,7 @@ const content = {
         },
       },
       scientificApproach: {
-        title: "🧩 Bilimsel Yaklaşım ve Multidisipliner Ekip",
+        title: "Bilimsel Yaklaşım ve Multidisipliner Ekip",
         description:
           "OW bünyesindeki ekip; istatistik, ekonomi, sistem mühendisliği, şehir planlama, bilgisayar bilimi ve sağlık bilimleri gibi farklı alanlardan gelen uzmanlardan oluşur. Bu sayede her çözümümüz; akademik geçerliliği olan, sahada test edilmiş ve yüksek etki potansiyeli taşıyan yapılar üzerine inşa edilir.",
       },
@@ -880,7 +880,7 @@ const content = {
     },
     products: {
       healthSystems: {
-        title: "🚑 Health Systems",
+        title: "Health Systems",
         subtitle: "Data-powered healthcare decisions.",
         items: [
           {
@@ -926,7 +926,7 @@ const content = {
         ],
       },
       healthyCities: {
-        title: "🏙️ Healthy City Solutions",
+        title: "Healthy City Solutions",
         subtitle: "Data-planned, human-centric cities.",
         items: [
           {
@@ -993,7 +993,7 @@ const content = {
       items: [
         {
           id: "hospitals-clinics",
-          title: "🏥 Hastaneler & Klinikler",
+          title: "Hastaneler & Klinikler",
           icon: BriefcaseMedical,
           iconColor: "text-blue-600",
           shortDescription: "Tanıdan tedaviye, veriyle güçlenen sağlık hizmetleri.",
@@ -1001,7 +1001,7 @@ const content = {
         },
         {
           id: "municipalities-transport",
-          title: "🏛️ Belediyeler & Ulaşım Daireleri",
+          title: "Belediyeler & Ulaşım Daireleri",
           icon: Building,
           iconColor: "text-green-600",
           shortDescription: "Şehir içi ulaşım ağları için bilimsel planlama gücü.",
@@ -1009,7 +1009,7 @@ const content = {
         },
         {
           id: "smart-city-projects",
-          title: "🏙️ Akıllı Şehir Projeleri",
+          title: "Akıllı Şehir Projeleri",
           icon: City,
           iconColor: "text-purple-600",
           shortDescription: "Sağlık, ulaşım ve çevre verisini entegre eden kent zekâsı.",
@@ -1025,7 +1025,7 @@ const content = {
         },
         {
           id: "ministries-public",
-          title: "🏥 Sağlık Bakanlıkları & Kamu Kurumları",
+          title: "Sağlık Bakanlıkları & Kamu Kurumları",
           icon: Government,
           iconColor: "text-red-600",
           shortDescription: "Ulusal düzeyde sağlık politikalarını veriyle şekillendirin.",
@@ -1046,7 +1046,7 @@ const content = {
         },
         {
           id: "hospital-early-diagnosis",
-          title: "🏥 Kamu Hastanesinde OW Decisions™ ile Erken Teşhis",
+          title: "Kamu Hastanesinde OW Decisions™ ile Erken Teşhis",
           icon: Stethoscope,
           iconColor: "text-green-600",
           shortDescription: "Orta ölçekli bir devlet hastanesinde tanı süreci veriye dayalı önerilerle desteklendi.",
@@ -1054,7 +1054,7 @@ const content = {
         },
         {
           id: "passenger-density-cost-saving",
-          title: "👥 Yolcu Yoğunluğu Modellemesiyle Maliyet Tasarrufu",
+          title: "Yolcu Yoğunluğu Modellemesiyle Maliyet Tasarrufu",
           icon: Users,
           iconColor: "text-purple-600",
           shortDescription: "Gerçek zamanlı yolcu tahmin modeliyle belediye toplu taşıma sisteminde tasarruf sağlandı.",
@@ -1062,7 +1062,7 @@ const content = {
         },
         {
           id: "dead-km-minimization",
-          title: "🚌 Veriye Dayalı Ölü Km Minimizasyon Modeli",
+          title: "Veriye Dayalı Ölü Km Minimizasyon Modeli",
           icon: Truck,
           iconColor: "text-orange-600",
           shortDescription: "Filo planlamasında ölü kilometreyi azaltmak için çözümler uygulandı.",
@@ -1076,7 +1076,7 @@ const content = {
       items: [
         {
           id: "demo-form",
-          title: "🚀 Hızlı Demo Formu",
+          title: "Hızlı Demo Formu",
           icon: FormInput,
           iconColor: "text-blue-600",
           shortDescription: "OW çözümlerinin sizin kurumunuz için nasıl çalışacağını görmek ister misiniz?",
@@ -1088,7 +1088,7 @@ const content = {
         },
         {
           id: "partnership-application",
-          title: "🤝 İş Ortaklığı Başvurusu",
+          title: "İş Ortaklığı Başvurusu",
           icon: Handshake,
           iconColor: "text-green-600",
           shortDescription:
@@ -1097,7 +1097,7 @@ const content = {
         },
         {
           id: "press-media",
-          title: "📰 Basın & Medya İletişimi",
+          title: "Basın & Medya İletişimi",
           icon: Newspaper,
           iconColor: "text-purple-600",
           shortDescription:
@@ -1106,7 +1106,7 @@ const content = {
         },
         {
           id: "locations",
-          title: "🌍 Lokasyon & Temsilcilikler",
+          title: "Lokasyon & Temsilcilikler",
           icon: Map,
           iconColor: "text-orange-600",
           shortDescription: "OW, Türkiye merkezli olup Avrupa ve ABD'de temsilcilik ağına sahiptir.",
@@ -1135,7 +1135,7 @@ const content = {
       items: [
         {
           id: "academic-statistician",
-          title: "📊 Academic Statistician",
+          title: "Academic Statistician",
           icon: BarChart3,
           iconColor: "text-blue-600",
           shortDescription: "Predicting the future with numbers.",
@@ -1144,7 +1144,7 @@ const content = {
         },
         {
           id: "economist",
-          title: "💸 Economist",
+          title: "Economist",
           icon: DollarSign,
           iconColor: "text-green-600",
           shortDescription: "Measuring efficiency not just by cost, but by quality of life.",
@@ -1153,7 +1153,7 @@ const content = {
         },
         {
           id: "data-engineer",
-          title: "🧠 Data Engineer",
+          title: "Data Engineer",
           icon: Database,
           iconColor: "text-purple-600",
           shortDescription: "The one who transforms data from chaos to order.",
@@ -1162,7 +1162,7 @@ const content = {
         },
         {
           id: "urban-planner",
-          title: "🏙️ Senior Urban Planner",
+          title: "Senior Urban Planner",
           icon: City,
           iconColor: "text-orange-600",
           shortDescription: "Designs the city not just with roads, but with people.",
@@ -1171,7 +1171,7 @@ const content = {
         },
         {
           id: "sistem-muhendisi",
-          title: "🧩 System Engineer",
+          title: "System Engineer",
           icon: Puzzle,
           iconColor: "text-red-600",
           shortDescription: "Optimizes every component within a whole.",
@@ -1210,7 +1210,7 @@ const content = {
             "Bu kapsamda geliştirdiğimiz OW Insight™, OW Decisions™ ve OW Signals™ ürün ailesi, tanı-tedavi süreçlerinde doğruluk, hız ve maliyet etkinliği sağlar.",
         },
         healthyCities: {
-          title: "🏙️ Sağlıklı Kentler için Akıllı Kentsel Sistemler",
+          title: "Sağlıklı Kentler için Akıllı Kentsel Sistemler",
           description:
             "OW, şehir planlamasında ve toplu taşıma yönetiminde karar vericilere yönelik yüksek doğruluklu analitik modeller ve optimizasyon araçları sunar:",
           points: [
@@ -1225,7 +1225,7 @@ const content = {
         },
       },
       scientificApproach: {
-        title: "🧩 Bilimsel Yaklaşım ve Multidisipliner Ekip",
+        title: "Bilimsel Yaklaşım ve Multidisipliner Ekip",
         description:
           "OW bünyesindeki ekip; istatistik, ekonomi, sistem mühendisliği, şehir planlama, bilgisayar bilimi ve sağlık bilimleri gibi farklı alanlardan gelen uzmanlardan oluşur. Bu sayede her çözümümüz; akademik geçerliliği olan, sahada test edilmiş ve yüksek etki potansiyeli taşıyan yapılar üzerine inşa edilir.",
       },
