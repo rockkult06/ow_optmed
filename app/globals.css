@@ -97,22 +97,49 @@ body {
   /* Mobil optimizasyonları */
   @media (max-width: 768px) {
     html {
-      font-size: 14px;
+      font-size: 16px; /* Boyutu 14px'den 16px'e çıkardım */
     }
     
     body {
-      line-height: 1.4;
+      line-height: 1.5; /* Satır aralığını arttırdım */
     }
     
-    /* Touch-friendly minimum sizes */
+    /* Touch-friendly minimum sizes - büyüttüm */
     button, input, select, textarea {
-      min-height: 44px;
+      min-height: 48px; /* 44px'den 48px'e çıkardım */
     }
     
     /* Prevent text scaling on orientation change */
     html {
       -webkit-text-size-adjust: 100%;
       text-size-adjust: 100%;
+    }
+    
+    /* Mobil için daha büyük text boyutları */
+    .mobile-large-text {
+      font-size: 1.125rem !important; /* 18px */
+    }
+    
+    .mobile-large-heading {
+      font-size: 1.5rem !important; /* 24px */
+    }
+    
+    /* Mobil için daha geniş padding/margin */
+    .mobile-spacing {
+      padding: 1.5rem !important;
+      margin: 1rem 0 !important;
+    }
+    
+    /* Hero görsel boyutunu arttırma */
+    .hero-mobile-large {
+      height: 70vh !important; /* Daha büyük hero alanı */
+      min-height: 500px !important;
+    }
+    
+    /* Mobil menü boyutu arttırma */
+    .mobile-menu-large {
+      padding: 1rem 1.5rem !important;
+      font-size: 1.125rem !important;
     }
   }
 }

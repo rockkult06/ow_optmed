@@ -166,7 +166,7 @@ const content = {
             icon: Bus,
             iconColor: "text-orange-600",
             shortDescription: "Şehrinizdeki her hattı veriye göre yeniden şekillendirin.",
-            longDescription: `OW’nin optimizasyon motoru, tüm şehir ulaşım haritasını algoritmalarla yeniden değerlendirir. Boş seferleri tespit eder, düşük verimli hatları önerilerle iyileştirir ve toplu taşımanın hem etkinliğini hem de erişilebilirliğini artırır. Yolcular daha az bekler, sistem daha az harcar.`,
+            longDescription: `OW'nin optimizasyon motoru, tüm şehir ulaşım haritasını algoritmalarla yeniden değerlendirir. Boş seferleri tespit eder, düşük verimli hatları önerilerle iyileştirir ve toplu taşımanın hem etkinliğini hem de erişilebilirliğini artırır. Yolcular daha az bekler, sistem daha az harcar.`,
           },
           {
             id: "urban-health-access-analysis",
@@ -241,97 +241,97 @@ const content = {
       ],
     },
     successStories: {
-      subtitle: "OW çözümleriyle optimize edilen sistemler, sahada ölçülebilir faydalar sağlıyor.",
+      subtitle: "Systems optimized with OW solutions provide measurable benefits in the field.",
       items: [
         {
           id: "izmir-transport",
-          title: "🚏 İzmir Ulaşım Ağı Optimizasyonu",
+          title: "İzmir Transportation Network Optimization",
           icon: Route,
           iconColor: "text-blue-600",
-          shortDescription: "İzmir Büyükşehir Belediyesi ile otobüs hatları bilimsel analizle yeniden yapılandırıldı.",
-          longDescription: `İzmir Büyükşehir Belediyesi ile yürütülen bu projede, OW TransitOpt™ algoritmaları kullanılarak tüm otobüs hatları bilimsel analizle yeniden yapılandırıldı. Sonuç: %18 daha kısa ortalama yolculuk süresi, %22 daha düşük işletme maliyeti, filo verimliliğinde belirgin artış.`,
+          shortDescription: "Bus routes were restructured with scientific analysis with İzmir Metropolitan Municipality.",
+          longDescription: `In this project carried out with İzmir Metropolitan Municipality, all bus routes were restructured with scientific analysis using OW TransitOpt™ algorithms. Result: 18% shorter average travel time, 22% lower operating costs, significant increase in fleet efficiency.`,
         },
         {
           id: "hospital-early-diagnosis",
-          title: "Kamu Hastanesinde OW Decisions™ ile Erken Teşhis",
+          title: "Early Diagnosis with OW Decisions™ in Public Hospital",
           icon: Stethoscope,
           iconColor: "text-green-600",
-          shortDescription: "Orta ölçekli bir devlet hastanesinde tanı süreci veriye dayalı önerilerle desteklendi.",
-          longDescription: `Orta ölçekli bir devlet hastanesinde OW Decisions™ karar destek sistemi kullanılarak, tanı süreci veriye dayalı önerilerle desteklendi. Sonuç: Kritik hastalarda ortalama teşhis süresi %35 oranında kısaldı, doğru tedaviye yönlendirme oranı arttı.`,
+          shortDescription: "The diagnostic process was supported with data-driven recommendations in a medium-sized state hospital.",
+          longDescription: `In a medium-sized state hospital, the diagnostic process was supported with data-driven recommendations using the OW Decisions™ decision support system. Result: Average diagnosis time for critical patients was shortened by 35%, and the rate of referral to correct treatment increased.`,
         },
         {
           id: "passenger-density-cost-saving",
-          title: "Yolcu Yoğunluğu Modellemesiyle Maliyet Tasarrufu",
+          title: "Cost Savings with Passenger Density Modeling",
           icon: Users,
           iconColor: "text-purple-600",
-          shortDescription: "Gerçek zamanlı yolcu tahmin modeliyle belediye toplu taşıma sisteminde tasarruf sağlandı.",
-          longDescription: `OW RiderSense™ platformu ile bir belediye toplu taşıma sisteminde gerçek zamanlı yolcu tahmin modeli kuruldu. Sonuç: Sefer planlaması talebe göre optimize edildi, yoğunluk kaynaklı şikayetlerde %40 azalma, toplam operasyon maliyetlerinde %19 tasarruf sağlandı.`,
+          shortDescription: "Savings were achieved in the municipal public transportation system with real-time passenger prediction model.",
+          longDescription: `A real-time passenger prediction model was established in a municipal public transportation system with the OW RiderSense™ platform. Result: Flight planning was optimized according to demand, 40% reduction in density-related complaints, 19% savings in total operation costs.`,
         },
         {
           id: "dead-km-minimization",
-          title: "Veriye Dayalı Ölü Km Minimizasyon Modeli",
+          title: "Data-Driven Dead Km Minimization Model",
           icon: Truck,
           iconColor: "text-orange-600",
-          shortDescription: "Filo planlamasında ölü kilometreyi azaltmak için çözümler uygulandı.",
-          longDescription: `Filo planlamasında ölü kilometreyi azaltmak için OW CostLogic™ ve TransitOpt™ birlikte uygulandı. Sonuç: Garaj–hat eşleşmeleri optimize edilerek, günlük toplam ölü km %26 oranında azaltıldı. Hem yakıt gideri hem de karbon salımı ciddi ölçüde düşürüldü.`,
+          shortDescription: "Solutions were implemented to reduce dead kilometers in fleet planning.",
+          longDescription: `OW CostLogic™ and TransitOpt™ were applied together to reduce dead kilometers in fleet planning. Result: By optimizing garage-route matches, daily total dead km was reduced by 26%. Both fuel costs and carbon emissions were significantly reduced.`,
         },
       ],
     },
     contact: {
       subtitle:
-        "İster bir demo görmek isteyin, ister stratejik iş birliği ya da basın teması için ulaşın — OW ekibi yanıt vermeye hazır.",
+        "Whether you want to see a demo, reach out for strategic collaboration or press contact — the OW team is ready to respond.",
       items: [
         {
           id: "demo-form",
-          title: "Hızlı Demo Formu",
+          title: "Quick Demo Form",
           icon: FormInput,
           iconColor: "text-blue-600",
-          shortDescription: "OW çözümlerinin sizin kurumunuz için nasıl çalışacağını görmek ister misiniz?",
-          longDescription: `Formu doldurun, ihtiyaçlarınıza özel hazırlanmış bir demo ile sizinle iletişime geçelim.
+          shortDescription: "Would you like to see how OW solutions work for your organization?",
+          longDescription: `Fill out the form and let's contact you with a demo specially prepared for your needs.
         <br/><br/>
-        **İstenen alanlar:** Ad – Kurum – E-posta – İlgilendiğiniz çözüm – Mesaj
+        **Required fields:** Name – Organization – Email – Solution of interest – Message
         <br/>
-        **Yanıt süresi:** 24 saat içinde dönüş yapılır.`,
+        **Response time:** Reply within 24 hours.`,
         },
         {
           id: "partnership-application",
-          title: "İş Ortaklığı Başvurusu",
+          title: "Partnership Application",
           icon: Handshake,
           iconColor: "text-green-600",
           shortDescription:
-            "OW teknolojilerini entegre etmek, birlikte ürün geliştirmek ya da distribütörlük başvurusu yapmak isteyen firmalar için özel iletişim alanı.",
-          longDescription: `Global teknoloji iş birliklerine açığız.`,
+            "A dedicated contact area for companies wishing to integrate OW technologies, co-develop products, or apply for distributorship.",
+          longDescription: `We are open to global technology collaborations.`,
         },
         {
           id: "press-media",
-          title: "Basın & Medya İletişimi",
+          title: "Press & Media Communication",
           icon: Newspaper,
           iconColor: "text-purple-600",
           shortDescription:
-            "Röportaj, haber dosyası, sektör analizleri veya etkinlikler için medya temsilcileri bizimle doğrudan iletişime geçebilir.",
-          longDescription: `Kurumsal kimlik kitimiz ve basın bültenlerimiz istek üzerine gönderilir.`,
+            "Media representatives can contact us directly for interviews, press kits, sector analyses, or events.",
+          longDescription: `Our corporate identity kit and press releases are sent upon request.`,
         },
         {
           id: "locations",
-          title: "Lokasyon & Temsilcilikler",
+          title: "Locations & Representatives",
           icon: Map,
           iconColor: "text-orange-600",
-          shortDescription: "OW, Türkiye merkezli olup Avrupa ve ABD'de temsilcilik ağına sahiptir.",
-          longDescription: `Sayfada harita üzerinde konum gösterimi ve doğrudan e-posta ile irtibat kurulacak temsilci listesi yer almalıdır.
+          shortDescription: "OW is based in Turkey and has a representative network in Europe and the USA.",
+          longDescription: `The page should include location display on a map and a list of representatives to contact directly via email.
         <br/><br/>
-        **İletişim Bilgileri:**
+        **Contact Information:**
         <br/>
-        <Mail className="inline-block w-4 h-4 mr-2" /> E-posta: info@ow.com
+        <Mail className="inline-block w-4 h-4 mr-2" /> Email: info@ow.com
         <br/>
-        <Phone className="inline-block w-4 h-4 mr-2" /> Telefon: 02322353535
+        <Phone className="inline-block w-4 h-4 mr-2" /> Phone: 02322353535
         <br/><br/>
-        **📌 Örnek:**
+        **📌 Example:**
         <br/>
-        **İzmir — Genel Merkez:** Gazi Mustafa Kemal Mahallesi, Kaynaklar Caddesi Seyrek, Menemen, İzmir
+        **İzmir — Headquarters:** Gazi Mustafa Kemal District, Kaynaklar Street Seyrek, Menemen, İzmir
         <br/>
-        **Berlin — Avrupa Operasyonları**
+        **Berlin — European Operations**
         <br/>
-        **Seattle — Amerika Temsilciliği**`,
+        **Seattle — American Representation**`,
         },
       ],
     },
@@ -638,457 +638,61 @@ const content = {
       ],
     },
     successStories: {
-      subtitle: "OW çözümleriyle optimize edilen sistemler, sahada ölçülebilir faydalar sağlıyor.",
+      subtitle: "Systems optimized with OW solutions provide measurable benefits in the field.",
       items: [
         {
           id: "izmir-transport",
-          title: "🚏 İzmir Ulaşım Ağı Optimizasyonu",
+          title: "İzmir Transportation Network Optimization",
           icon: Route,
           iconColor: "text-blue-600",
-          shortDescription: "İzmir Büyükşehir Belediyesi ile otobüs hatları bilimsel analizle yeniden yapılandırıldı.",
-          longDescription: `İzmir Büyükşehir Belediyesi ile yürütülen bu projede, OW TransitOpt™ algoritmaları kullanılarak tüm otobüs hatları bilimsel analizle yeniden yapılandırıldı. Sonuç: %18 daha kısa ortalama yolculuk süresi, %22 daha düşük işletme maliyeti, filo verimliliğinde belirgin artış.`,
+          shortDescription: "Bus routes were restructured with scientific analysis with İzmir Metropolitan Municipality.",
+          longDescription: `In this project carried out with İzmir Metropolitan Municipality, all bus routes were restructured with scientific analysis using OW TransitOpt™ algorithms. Result: 18% shorter average travel time, 22% lower operating costs, significant increase in fleet efficiency.`,
         },
         {
           id: "hospital-early-diagnosis",
-          title: "Kamu Hastanesinde OW Decisions™ ile Erken Teşhis",
+          title: "Early Diagnosis with OW Decisions™ in Public Hospital",
           icon: Stethoscope,
           iconColor: "text-green-600",
-          shortDescription: "Orta ölçekli bir devlet hastanesinde tanı süreci veriye dayalı önerilerle desteklendi.",
-          longDescription: `Orta ölçekli bir devlet hastanesinde OW Decisions™ karar destek sistemi kullanılarak, tanı süreci veriye dayalı önerilerle desteklendi. Sonuç: Kritik hastalarda ortalama teşhis süresi %35 oranında kısaldı, doğru tedaviye yönlendirme oranı arttı.`,
+          shortDescription: "The diagnostic process was supported with data-driven recommendations in a medium-sized state hospital.",
+          longDescription: `In a medium-sized state hospital, the diagnostic process was supported with data-driven recommendations using the OW Decisions™ decision support system. Result: Average diagnosis time for critical patients was shortened by 35%, and the rate of referral to correct treatment increased.`,
         },
         {
           id: "passenger-density-cost-saving",
-          title: "Yolcu Yoğunluğu Modellemesiyle Maliyet Tasarrufu",
+          title: "Cost Savings with Passenger Density Modeling",
           icon: Users,
           iconColor: "text-purple-600",
-          shortDescription: "Gerçek zamanlı yolcu tahmin modeliyle belediye toplu taşıma sisteminde tasarruf sağlandı.",
-          longDescription: `OW RiderSense™ platformu ile bir belediye toplu taşıma sisteminde gerçek zamanlı yolcu tahmin modeli kuruldu. Sonuç: Sefer planlaması talebe göre optimize edildi, yoğunluk kaynaklı şikayetlerde %40 azalma, toplam operasyon maliyetlerinde %19 tasarruf sağlandı.`,
+          shortDescription: "Savings were achieved in the municipal public transportation system with real-time passenger prediction model.",
+          longDescription: `A real-time passenger prediction model was established in a municipal public transportation system with the OW RiderSense™ platform. Result: Flight planning was optimized according to demand, 40% reduction in density-related complaints, 19% savings in total operation costs.`,
         },
         {
           id: "dead-km-minimization",
-          title: "Veriye Dayalı Ölü Km Minimizasyon Modeli",
+          title: "Data-Driven Dead Km Minimization Model",
           icon: Truck,
           iconColor: "text-orange-600",
-          shortDescription: "Filo planlamasında ölü kilometreyi azaltmak için çözümler uygulandı.",
-          longDescription: `Filo planlamasında ölü kilometreyi azaltmak için OW CostLogic™ ve TransitOpt™ birlikte uygulandı. Sonuç: Garaj–hat eşleşmeleri optimize edilerek, günlük toplam ölü km %26 oranında azaltıldı. Hem yakıt gideri hem de karbon salımı ciddi ölçüde düşürüldü.`,
+          shortDescription: "Solutions were implemented to reduce dead kilometers in fleet planning.",
+          longDescription: `OW CostLogic™ and TransitOpt™ were applied together to reduce dead kilometers in fleet planning. Result: By optimizing garage-route matches, daily total dead km was reduced by 26%. Both fuel costs and carbon emissions were significantly reduced.`,
         },
       ],
     },
     contact: {
       subtitle:
-        "İster bir demo görmek isteyin, ister stratejik iş birliği ya da basın teması için ulaşın — OW ekibi yanıt vermeye hazır.",
+        "Whether you want to see a demo, reach out for strategic collaboration or press contact — the OW team is ready to respond.",
       items: [
         {
           id: "demo-form",
-          title: "Hızlı Demo Formu",
+          title: "Quick Demo Form",
           icon: FormInput,
           iconColor: "text-blue-600",
-          shortDescription: "OW çözümlerinin sizin kurumunuz için nasıl çalışacağını görmek ister misiniz?",
-          longDescription: `Formu doldurun, ihtiyaçlarınıza özel hazırlanmış bir demo ile sizinle iletişime geçelim.
+          shortDescription: "Would you like to see how OW solutions work for your organization?",
+          longDescription: `Fill out the form and let's contact you with a demo specially prepared for your needs.
         <br/><br/>
-        **İstenen alanlar:** Ad – Kurum – E-posta – İlgilendiğiniz çözüm – Mesaj
+        **Required fields:** Name – Organization – Email – Solution of interest – Message
         <br/>
-        **Yanıt süresi:** 24 saat içinde dönüş yapılır.`,
+        **Response time:** Reply within 24 hours.`,
         },
         {
           id: "partnership-application",
-          title: "İş Ortaklığı Başvurusu",
-          icon: Handshake,
-          iconColor: "text-green-600",
-          shortDescription:
-            "OW teknolojilerini entegre etmek, birlikte ürün geliştirmek ya da distribütörlük başvurusu yapmak isteyen firmalar için özel iletişim alanı.",
-          longDescription: `Global teknoloji iş birliklerine açığız.`,
-        },
-        {
-          id: "press-media",
-          title: "Basın & Medya İletişimi",
-          icon: Newspaper,
-          iconColor: "text-purple-600",
-          shortDescription:
-            "Röportaj, haber dosyası, sektör analizleri veya etkinlikler için medya temsilcileri bizimle doğrudan iletişime geçebilir.",
-          longDescription: `Kurumsal kimlik kitimiz ve basın bültenlerimiz istek üzerine gönderilir.`,
-        },
-        {
-          id: "locations",
-          title: "Lokasyon & Temsilcilikler",
-          icon: Map,
-          iconColor: "text-orange-600",
-          shortDescription: "OW, Türkiye merkezli olup Avrupa ve ABD'de temsilcilik ağına sahiptir.",
-          longDescription: `Sayfada harita üzerinde konum gösterimi ve doğrudan e-posta ile irtibat kurulacak temsilci listesi yer almalıdır.
-        <br/><br/>
-        **İletişim Bilgileri:**
-        <br/>
-        <Mail className="inline-block w-4 h-4 mr-2" /> E-posta: info@ow.com
-        <br/>
-        <Phone className="inline-block w-4 h-4 mr-2" /> Telefon: 02322353535
-        <br/><br/>
-        **📌 Örnek:**
-        <br/>
-        **İzmir — Genel Merkez:** Gazi Mustafa Kemal Mahallesi, Kaynaklar Caddesi Seyrek, Menemen, İzmir
-        <br/>
-        **Berlin — Avrupa Operasyonları**
-        <br/>
-        **Seattle — Amerika Temsilciliği**`,
-        },
-      ],
-    },
-    ekibimiz: {
-      // New section for Ekibimiz
-      subtitle:
-        "OW ekibi; analitik zekâsı, sistem yaklaşımı ve etik duruşuyla veriyi dünyayı dönüştürmek için kullanan uzmanlardan oluşur.",
-      items: [
-        {
-          id: "akademisyen-istatistikci",
-          title: "Akademisyen İstatistikçi",
-          icon: BarChart3,
-          iconColor: "text-blue-600",
-          shortDescription: "Sayılarla geleceği öngörüyor.",
-          longDescription:
-            "Tıbbi ve kentsel verilerin istatistiksel modellemelerinde derinleşmiş, akademik yayınlarıyla tanınan ekip üyemiz; algoritmalarımızın bilimsel temelini güçlendirir.",
-        },
-        {
-          id: "ekonomist",
-          title: "Ekonomist",
-          icon: DollarSign,
-          iconColor: "text-green-600",
-          shortDescription: "Verimliliği sadece maliyetle değil, yaşam kalitesiyle ölçüyor.",
-          longDescription:
-            "Ulaşım ve sağlık yatırımlarının sosyoekonomik etkilerini analiz eder. Sürdürülebilir ve adil kaynak kullanımı için OW'nin karar motorlarına ekonomik perspektif kazandırır.",
-        },
-        {
-          id: "veri-muhendisi",
-          title: "Veri Mühendisi",
-          icon: Database,
-          iconColor: "text-purple-600",
-          shortDescription: "Verinin kaostan düzene geçtiği kişi.",
-          longDescription:
-            "Çok kaynaklı büyük veri akışlarını filtreleyen, işleyen ve anlamlı hale getiren mimar. OW platformunun veri omurgasını inşa eder, güvenli ve ölçeklenebilir veri sistemleri kurar.",
-        },
-        {
-          id: "yuksek-sehir-plancisi",
-          title: "Yüksek Şehir Plancısı",
-          icon: City,
-          iconColor: "text-orange-600",
-          shortDescription: "Şehri sadece yollarla değil, insanla birlikte tasarlar.",
-          longDescription:
-            "Toplu taşıma, sağlık erişimi ve çevresel etki gibi çok boyutlu analizlerle kentlerin daha sağlıklı ve kapsayıcı hale gelmesi için çalışır. İnsan odaklı akıllı şehir vizyonunun taşıyıcısıdır.",
-        },
-        {
-          id: "sistem-muhendisi",
-          title: "Sistem Mühendisi",
-          icon: Puzzle,
-          iconColor: "text-red-600",
-          shortDescription: "Her bileşeni bir bütün içinde optimize eder.",
-          longDescription:
-            "OW'nin yazılım, algoritma ve entegrasyon süreçlerinin ardındaki sistemsel akıl. Farklı modüllerin birlikte çalışmasını sağlayan mimari kurgunun yaratıcısıdır.",
-        },
-      ],
-    },
-    hero: {
-      cta: "Tıbbi veri analizinde yeni nesil yaklaşımlar",
-      slogan: "Sağlık Sistemleri için Akıllı Analitik [♡] Sağlıklı Kent Çözümleri",
-    },
-    bottomTags: {
-      explore: "Keşfet:",
-      tags: ["Tıbbi Veri Analizi", "Karar Destek", "Yapay Zeka Uygulamaları", "Klinik Araştırmalar"],
-    },
-    ctaModal: {
-      title: "OW – Optimize the World",
-      description: "Veri odaklı karar destek sistemleriyle daha sağlıklı, daha verimli bir dünya inşa ediyoruz.",
-      overview:
-        "OW, sağlık sistemleri ve kentsel altyapılar için veri bilimi, optimizasyon algoritmaları ve yapay zekâ temelli çözümler geliştiren çok disiplinli bir teknoloji kuruluşudur. Temel hedefimiz; kamu ve özel sektör kurumlarının karar alma süreçlerini bilimsel yöntemlerle güçlendirmek, kaynak kullanımını optimize etmek ve hizmet kalitesini ölçülebilir biçimde artırmaktır.",
-      expertiseAreas: {
-        title: "Uzmanlık Alanlarımız",
-        healthSystems: {
-          title: "🩺 Sağlık Sistemleri İçin Karar Destek Çözümleri",
-          description:
-            "OW; hastaneler, klinikler, aile sağlığı merkezleri ve sağlık bakanlıkları gibi sağlık hizmet sunucularına yönelik olarak, aşağıdaki konularda veri destekli teknolojiler sunar:",
-          points: [
-            "Klinik karar destek sistemleri",
-            "Gerçek zamanlı sağlık verisi analizi",
-            "Risk skorlamaları ve erken uyarı algoritmaları",
-            "Sağlık hizmet zinciri entegrasyonu",
-            "Hasta profilleme ve tedavi optimizasyonu",
-          ],
-          products:
-            "Bu kapsamda geliştirdiğimiz OW Insight™, OW Decisions™ ve OW Signals™ ürün ailesi, tanı-tedavi süreçlerinde doğruluk, hız ve maliyet etkinliği sağlar.",
-        },
-        healthyCities: {
-          title: "Sağlıklı Kentler için Akıllı Kentsel Sistemler",
-          description:
-            "OW, şehir planlamasında ve toplu taşıma yönetiminde karar vericilere yönelik yüksek doğruluklu analitik modeller ve optimizasyon araçları sunar:",
-          points: [
-            "Ulaşım ağı optimizasyonu",
-            "Yolcu yoğunluğu tahmini",
-            "Ölü kilometre (dead mileage) azaltımı",
-            "Karbon salımı ve çevresel etki analizleri",
-            "Kentsel sağlık hizmetlerine erişim modellemeleri",
-          ],
-          products:
-            "Bu doğrultuda geliştirilen OW TransitOpt™, OW RiderSense™ ve OW CostLogic™ çözümleri, kentlerin hem operasyonel verimliliğini hem de sürdürülebilirlik hedeflerini destekler.",
-        },
-      },
-      scientificApproach: {
-        title: "Bilimsel Yaklaşım ve Multidisipliner Ekip",
-        description:
-          "OW bünyesindeki ekip; istatistik, ekonomi, sistem mühendisliği, şehir planlama, bilgisayar bilimi ve sağlık bilimleri gibi farklı alanlardan gelen uzmanlardan oluşur. Bu sayede her çözümümüz; akademik geçerliliği olan, sahada test edilmiş ve yüksek etki potansiyeli taşıyan yapılar üzerine inşa edilir.",
-      },
-    },
-  },
-  EN: {
-    menu: {
-      hakkimizda: "About Us",
-      cozumlerimiz: "Solutions",
-      sektorler: "Sectors",
-      basariHikayeleri: "Success Stories",
-      iletisim: "Contact",
-      ekibimiz: "Our Team", // Renamed from search
-    },
-    dropdownTitles: {
-      hakkimizda: "About Us",
-      cozumlerimiz: "Solutions",
-      sektorler: "Sectors",
-      basariHikayeleri: "Success Stories",
-      iletisim: "Contact",
-      ekibimiz: "Our Team", // Renamed from search
-    },
-    dropdownSubtitles: {
-      cozumlerimiz: "Explore Products",
-      sektorler: "OW offers optimized solutions tailored for various sectors.",
-      basariHikayeleri: "Real data, real results.",
-      iletisim: "How can we optimize for you?",
-      ekibimiz: "Science, technology, and urban living combined.", // New subtitle for Ekibimiz
-    },
-    hakkimizda: {
-      bizKimiz: {
-        title: "Who Are We?",
-        desc1: "OW is a technology company that makes the world healthier and more livable by giving meaning to data.",
-        desc2:
-          "With our solutions ranging from healthcare systems to urban transportation, we enable faster decisions, smarter systems, and more humane cities.",
-      },
-      vizyonMisyon: {
-        title: "Vision - Mission",
-        visionTitle: "Our Vision",
-        visionDesc1: "To build a data-driven world.",
-        visionDesc2:
-          "We are designing a future where every individual, every city, and every system operates more efficiently.",
-        missionTitle: "Our Mission",
-        missionDesc1: "To transform data into action.",
-        missionDesc2:
-          "We develop human-centric, ethical, and sustainable technologies that optimize decisions in healthcare and urban living.",
-      },
-    },
-    products: {
-      healthSystems: {
-        title: "Health Systems",
-        subtitle: "Data-powered healthcare decisions.",
-        items: [
-          {
-            id: "ow-insight",
-            title: "OW Insight™",
-            icon: Stethoscope,
-            iconColor: "text-blue-600",
-            shortDescription: "Instantly make sense of complex medical data.",
-            longDescription: `It gathers multi-source data such as patient history, lab results, imaging data, and clinical notes, analyzing them with user-friendly graphics and intuitive dashboards. Real-time analysis capability enables clinicians to make quick and informed decisions. Data-driven transparency increases not only treatment processes but also patient trust.`,
-          },
-          {
-            id: "ow-decisions",
-            title: "OW Decisions™",
-            icon: Activity,
-            iconColor: "text-green-600",
-            shortDescription: "Support treatment decisions with artificial intelligence.",
-            longDescription: `The clinical decision support system analyzes patient-specific health data to provide the most appropriate diagnosis and treatment recommendations. Compatible with current medical protocols, this system offers measurable risk analyses and scenario-based recommendations, empowering doctors to make decisions one step ahead.`,
-          },
-          {
-            id: "ow-signals",
-            title: "OW Signals™",
-            icon: AlertTriangle,
-            iconColor: "text-red-600",
-            shortDescription: "Act proactively with critical data.",
-            longDescription: `It processes continuous data vital for intensive care and chronic patient monitoring. It detects anomalies in vital parameters such as heart rate, oxygen levels, and respiration in real-time, alerting clinical staff in advance. This prevents complications and shortens emergency response times.`,
-          },
-          {
-            id: "clinical-data-analysis",
-            title: "Clinical Data Analysis & Decision Support",
-            icon: Hospital,
-            iconColor: "text-purple-600",
-            shortDescription: "Data is no longer just a record, but a guide.",
-            longDescription: `It prevents healthcare organizations from getting lost in their daily data deluge. Data analytics increases diagnostic accuracy, personalizes treatment processes, and makes resource utilization more efficient. Machine learning-backed analyses provide doctors with data-driven clarity in decision-making processes.`,
-          },
-          {
-            id: "hospital-integration",
-            title: "Hospital, Clinic & Family Medicine Integration",
-            icon: Dna,
-            iconColor: "text-indigo-600",
-            shortDescription: "Unite all levels of healthcare under one intelligent umbrella.",
-            longDescription: `The OW platform integrates all layers of the healthcare service chain: Hospital, polyclinic, family medicine, and laboratory systems work in data harmony. This integration provides holistic health monitoring throughout the patient's life cycle and eliminates repetitive tests, information loss, and waste of time and cost.`,
-          },
-        ],
-      },
-      healthyCities: {
-        title: "Healthy City Solutions",
-        subtitle: "Data-planned, human-centric cities.",
-        items: [
-          {
-            id: "ow-transitopt",
-            title: "OW TransitOpt™",
-            icon: Car,
-            iconColor: "text-blue-600",
-            shortDescription: "Rethink transportation lines scientifically.",
-            longDescription: `It enables the data-driven restructuring of public transportation lines. With vehicle-route matching, garage-route distance optimization, and fleet capacity balance, it reduces operating costs and increases passenger satisfaction. Simulation-backed planning ensures the right resources, on the right line, at the right time.`,
-          },
-          {
-            id: "ow-ridersense",
-            title: "OW RiderSense™",
-            icon: TrendingUp,
-            iconColor: "text-green-600",
-            shortDescription: "Predict passenger density in advance.",
-            longDescription: `Real-time passenger movements combine with historical data and behavioral analyses. This system predicts hourly, regional, and seasonal passenger densities, enabling dynamic scheduling for transportation planners. Proactive service increases at crowded stops and resource optimization during low density become possible.`,
-          },
-          {
-            id: "ow-costlogic",
-            title: "OW CostLogic™",
-            icon: DollarSign,
-            iconColor: "text-yellow-600",
-            shortDescription: "Direct transportation investments to the right place.",
-            longDescription: `By performing route-based cost analysis, it provides decision-makers with detailed and real-time budget visibility. It analyzes items such as fuel consumption, maintenance costs, personnel distribution, and cost per passenger, ensuring strategic investment planning and resource efficiency.`,
-          },
-          {
-            id: "transportation-network-optimization",
-            title: "Ulaşım Ağı Optimizasyonu",
-            icon: Bus,
-            iconColor: "text-orange-600",
-            shortDescription: "Reshape every line in your city based on data.",
-            longDescription: `OW's optimization engine re-evaluates the entire city transportation map with algorithms. It identifies empty trips, improves low-efficiency lines with recommendations, and increases both the effectiveness and accessibility of public transportation. Passengers wait less, and the system spends less.`,
-          },
-          {
-            id: "urban-health-access-analysis",
-            title: "Kentsel Sağlık Erişimi Analizi",
-            icon: MapPin,
-            iconColor: "text-red-600",
-            shortDescription: "Herkesin sağlık hizmetine adil erişimini sağlayın.",
-            longDescription: `Toplu taşıma–sağlık erişim entegrasyonu.`,
-          },
-          {
-            id: "passenger-behavior-analysis",
-            title: "Yolcu Davranışı Analizi",
-            icon: BarChart3,
-            iconColor: "text-purple-600",
-            shortDescription: "Şehir sakinlerini daha iyi anlayın, akışı ona göre yönetin.",
-            longDescription: `Veriye dayalı kullanıcı profilleri ve tahminler.`,
-          },
-          {
-            id: "carbon-environmental-impact-modeling",
-            title: "Karbon ve Çevresel Etki Modellemesi",
-            icon: Leaf,
-            iconColor: "text-green-600",
-            shortDescription: "Kent politikalarını sürdürülebilirlik odağında optimize edin.",
-            longDescription: `Emisyon azaltımı, çevresel risk haritaları, planlama desteği.`,
-          },
-        ],
-      },
-    },
-    sectors: {
-      subtitle: "Veriye dayalı karar destek altyapımız, her kurumun kendi dinamiklerine uygun şekilde uyarlanabilir.",
-      items: [
-        {
-          id: "hospitals-clinics",
-          title: "Hastaneler & Klinikler",
-          icon: BriefcaseMedical,
-          iconColor: "text-blue-600",
-          shortDescription: "Tanıdan tedaviye, veriyle güçlenen sağlık hizmetleri.",
-          longDescription: `OW ürünleriyle hasta verileri anında analiz edilir, riskler öngörülür, tedavi süreçleri hızlandırılır. Klinik kararlar artık daha doğru, sistemler daha verimli.`,
-        },
-        {
-          id: "municipalities-transport",
-          title: "Belediyeler & Ulaşım Daireleri",
-          icon: Building,
-          iconColor: "text-green-600",
-          shortDescription: "Şehir içi ulaşım ağları için bilimsel planlama gücü.",
-          longDescription: `Hat optimizasyonu, yolcu yoğunluğu tahmini, karbon ayak izi analizi gibi veriye dayalı çözümlerle toplu taşıma sistemleri daha akıllı, maliyetler daha düşük hale gelir.`,
-        },
-        {
-          id: "smart-city-projects",
-          title: "Akıllı Şehir Projeleri",
-          icon: City,
-          iconColor: "text-purple-600",
-          shortDescription: "Sağlık, ulaşım ve çevre verisini entegre eden kent zekâsı.",
-          longDescription: `OW, şehirlerin farklı altyapı sistemlerini tek çatı altında analiz ederek sürdürülebilir, insan odaklı şehir yaşamını mümkün kılar.`,
-        },
-        {
-          id: "universities-research",
-          title: "🎓 Üniversiteler & Araştırma Kurumları",
-          icon: GraduationCap,
-          iconColor: "text-orange-600",
-          shortDescription: "Bilimsel analizlerde güçlü veri altyapısı ve yapay zekâ desteği.",
-          longDescription: `Araştırma projelerinde büyük veri setlerinin temizlenmesi, analizi ve görselleştirilmesi için ideal platform. Özellikle sağlık ve şehir planlama alanlarında veri güdümlü akademik çalışmaları destekler.`,
-        },
-        {
-          id: "ministries-public",
-          title: "Sağlık Bakanlıkları & Kamu Kurumları",
-          icon: Government,
-          iconColor: "text-red-600",
-          shortDescription: "Ulusal düzeyde sağlık politikalarını veriyle şekillendirin.",
-          longDescription: `Karar destek sistemleri, epidemiyolojik modelleme ve sistem entegrasyonu alanlarında OW, kamu kurumlarına kapsamlı analiz ve izleme araçları sunar. Veriye dayalı politika üretiminin temelini oluşturur.`,
-        },
-      ],
-    },
-    successStories: {
-      subtitle: "OW çözümleriyle optimize edilen sistemler, sahada ölçülebilir faydalar sağlıyor.",
-      items: [
-        {
-          id: "izmir-transport",
-          title: "🚏 İzmir Ulaşım Ağı Optimizasyonu",
-          icon: Route,
-          iconColor: "text-blue-600",
-          shortDescription: "İzmir Büyükşehir Belediyesi ile otobüs hatları bilimsel analizle yeniden yapılandırıldı.",
-          longDescription: `İzmir Büyükşehir Belediyesi ile yürütülen bu projede, OW TransitOpt™ algoritmaları kullanılarak tüm otobüs hatları bilimsel analizle yeniden yapılandırıldı. Sonuç: %18 daha kısa ortalama yolculuk süresi, %22 daha düşük işletme maliyeti, filo verimliliğinde belirgin artış.`,
-        },
-        {
-          id: "hospital-early-diagnosis",
-          title: "Kamu Hastanesinde OW Decisions™ ile Erken Teşhis",
-          icon: Stethoscope,
-          iconColor: "text-green-600",
-          shortDescription: "Orta ölçekli bir devlet hastanesinde tanı süreci veriye dayalı önerilerle desteklendi.",
-          longDescription: `Orta ölçekli bir devlet hastanesinde OW Decisions™ karar destek sistemi kullanılarak, tanı süreci veriye dayalı önerilerle desteklendi. Sonuç: Kritik hastalarda ortalama teşhis süresi %35 oranında kısaldı, doğru tedaviye yönlendirme oranı arttı.`,
-        },
-        {
-          id: "passenger-density-cost-saving",
-          title: "Yolcu Yoğunluğu Modellemesiyle Maliyet Tasarrufu",
-          icon: Users,
-          iconColor: "text-purple-600",
-          shortDescription: "Gerçek zamanlı yolcu tahmin modeliyle belediye toplu taşıma sisteminde tasarruf sağlandı.",
-          longDescription: `OW RiderSense™ platformu ile bir belediye toplu taşıma sisteminde gerçek zamanlı yolcu tahmin modeli kuruldu. Sonuç: Sefer planlaması talebe göre optimize edildi, yoğunluk kaynaklı şikayetlerde %40 azalma, toplam operasyon maliyetlerinde %19 tasarruf sağlandı.`,
-        },
-        {
-          id: "dead-km-minimization",
-          title: "Veriye Dayalı Ölü Km Minimizasyon Modeli",
-          icon: Truck,
-          iconColor: "text-orange-600",
-          shortDescription: "Filo planlamasında ölü kilometreyi azaltmak için çözümler uygulandı.",
-          longDescription: `Filo planlamasında ölü kilometreyi azaltmak için OW CostLogic™ ve TransitOpt™ birlikte uygulandı. Sonuç: Garaj–hat eşleşmeleri optimize edilerek, günlük toplam ölü km %26 oranında azaltıldı. Hem yakıt gideri hem de karbon salımı ciddi ölçüde düşürüldü.`,
-        },
-      ],
-    },
-    contact: {
-      subtitle:
-        "İster bir demo görmek isteyin, ister stratejik iş birliği ya da basın teması için ulaşın — OW ekibi yanıt vermeye hazır.",
-      items: [
-        {
-          id: "demo-form",
-          title: "Hızlı Demo Formu",
-          icon: FormInput,
-          iconColor: "text-blue-600",
-          shortDescription: "OW çözümlerinin sizin kurumunuz için nasıl çalışacağını görmek ister misiniz?",
-          longDescription: `Formu doldurun, ihtiyaçlarınıza özel hazırlanmış bir demo ile sizinle iletişime geçelim.
-        <br/><br/>
-        **İstenen alanlar:** Ad – Kurum – E-posta – İlgilendiğiniz çözüm – Mesaj
-        <br/>
-        **Yanıt süresi:** 24 saat içinde dönüş yapılır.`,
-        },
-        {
-          id: "partnership-application",
-          title: "İş Ortaklığı Başvurusu",
+          title: "Partnership Application",
           icon: Handshake,
           iconColor: "text-green-600",
           shortDescription:
@@ -1097,7 +701,7 @@ const content = {
         },
         {
           id: "press-media",
-          title: "Basın & Medya İletişimi",
+          title: "Press & Media Communication",
           icon: Newspaper,
           iconColor: "text-purple-600",
           shortDescription:
@@ -1106,25 +710,120 @@ const content = {
         },
         {
           id: "locations",
-          title: "Lokasyon & Temsilcilikler",
+          title: "Locations & Representatives",
           icon: Map,
           iconColor: "text-orange-600",
-          shortDescription: "OW, Türkiye merkezli olup Avrupa ve ABD'de temsilcilik ağına sahiptir.",
+          shortDescription: "OW is based in Turkey and has a representative network in Europe and the USA.",
           longDescription: `The page should include location display on a map and a list of representatives to contact directly via email.
         <br/><br/>
-        **İletişim Bilgileri:**
+        **Contact Information:**
         <br/>
-        <Mail className="inline-block w-4 h-4 mr-2" /> E-posta: info@ow.com
+        <Mail className="inline-block w-4 h-4 mr-2" /> Email: info@ow.com
         <br/>
-        <Phone className="inline-block w-4 h-4 mr-2" /> Telefon: 02322353535
+        <Phone className="inline-block w-4 h-4 mr-2" /> Phone: 02322353535
         <br/><br/>
-        **📌 Örnek:**
+        **📌 Example:**
         <br/>
-        **İzmir — Genel Merkez:** Gazi Mustafa Kemal Mahallesi, Kaynaklar Caddesi Seyrek, Menemen, İzmir
+        **İzmir — Headquarters:** Gazi Mustafa Kemal District, Kaynaklar Street Seyrek, Menemen, İzmir
         <br/>
-        **Berlin — Avrupa Operasyonları**
+        **Berlin — European Operations**
         <br/>
-        **Seattle — Amerika Temsilciliği**`,
+        **Seattle — American Representation**`,
+        },
+      ],
+    },
+    successStories: {
+      subtitle: "Systems optimized with OW solutions provide measurable benefits in the field.",
+      items: [
+        {
+          id: "izmir-transport",
+          title: "İzmir Transportation Network Optimization",
+          icon: Route,
+          iconColor: "text-blue-600",
+          shortDescription: "Bus routes were restructured with scientific analysis with İzmir Metropolitan Municipality.",
+          longDescription: `In this project carried out with İzmir Metropolitan Municipality, all bus routes were restructured with scientific analysis using OW TransitOpt™ algorithms. Result: 18% shorter average travel time, 22% lower operating costs, significant increase in fleet efficiency.`,
+        },
+        {
+          id: "hospital-early-diagnosis",
+          title: "Early Diagnosis with OW Decisions™ in Public Hospital",
+          icon: Stethoscope,
+          iconColor: "text-green-600",
+          shortDescription: "The diagnostic process was supported with data-driven recommendations in a medium-sized state hospital.",
+          longDescription: `In a medium-sized state hospital, the diagnostic process was supported with data-driven recommendations using the OW Decisions™ decision support system. Result: Average diagnosis time for critical patients was shortened by 35%, and the rate of referral to correct treatment increased.`,
+        },
+        {
+          id: "passenger-density-cost-saving",
+          title: "Cost Savings with Passenger Density Modeling",
+          icon: Users,
+          iconColor: "text-purple-600",
+          shortDescription: "Savings were achieved in the municipal public transportation system with real-time passenger prediction model.",
+          longDescription: `A real-time passenger prediction model was established in a municipal public transportation system with the OW RiderSense™ platform. Result: Flight planning was optimized according to demand, 40% reduction in density-related complaints, 19% savings in total operation costs.`,
+        },
+        {
+          id: "dead-km-minimization",
+          title: "Data-Driven Dead Km Minimization Model",
+          icon: Truck,
+          iconColor: "text-orange-600",
+          shortDescription: "Solutions were implemented to reduce dead kilometers in fleet planning.",
+          longDescription: `OW CostLogic™ and TransitOpt™ were applied together to reduce dead kilometers in fleet planning. Result: By optimizing garage-route matches, daily total dead km was reduced by 26%. Both fuel costs and carbon emissions were significantly reduced.`,
+        },
+      ],
+    },
+    contact: {
+      subtitle:
+        "Whether you want to see a demo, reach out for strategic collaboration or press contact — the OW team is ready to respond.",
+      items: [
+        {
+          id: "demo-form",
+          title: "Quick Demo Form",
+          icon: FormInput,
+          iconColor: "text-blue-600",
+          shortDescription: "Would you like to see how OW solutions work for your organization?",
+          longDescription: `Fill out the form and let's contact you with a demo specially prepared for your needs.
+        <br/><br/>
+        **Required fields:** Name – Organization – Email – Solution of interest – Message
+        <br/>
+        **Response time:** Reply within 24 hours.`,
+        },
+        {
+          id: "partnership-application",
+          title: "Partnership Application",
+          icon: Handshake,
+          iconColor: "text-green-600",
+          shortDescription:
+            "A dedicated contact area for companies wishing to integrate OW technologies, co-develop products, or apply for distributorship.",
+          longDescription: `We are open to global technology collaborations.`,
+        },
+        {
+          id: "press-media",
+          title: "Press & Media Communication",
+          icon: Newspaper,
+          iconColor: "text-purple-600",
+          shortDescription:
+            "Media representatives can contact us directly for interviews, press kits, sector analyses, or events.",
+          longDescription: `Our corporate identity kit and press releases are sent upon request.`,
+        },
+        {
+          id: "locations",
+          title: "Locations & Representatives",
+          icon: Map,
+          iconColor: "text-orange-600",
+          shortDescription: "OW is based in Turkey and has a representative network in Europe and the USA.",
+          longDescription: `The page should include location display on a map and a list of representatives to contact directly via email.
+        <br/><br/>
+        **Contact Information:**
+        <br/>
+        <Mail className="inline-block w-4 h-4 mr-2" /> Email: info@ow.com
+        <br/>
+        <Phone className="inline-block w-4 h-4 mr-2" /> Phone: 02322353535
+        <br/><br/>
+        **📌 Example:**
+        <br/>
+        **İzmir — Headquarters:** Gazi Mustafa Kemal District, Kaynaklar Street Seyrek, Menemen, İzmir
+        <br/>
+        **Berlin — European Operations**
+        <br/>
+        **Seattle — American Representation**`,
         },
       ],
     },
